@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ConnectionDAO.cs" />
+    <Compile Include="DAO\gitDAO.cs" />
     <Compile Include="DAO\ItemDAO.cs" />
     <Compile Include="DAO\OrderItemDAO.cs" />
     <Compile Include="DTO\Items.cs" />
