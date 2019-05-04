@@ -152,7 +152,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="Bunifu_UI_v1.52.dll" Component_="Bunifu_UI_v1.52.dll" FileName="BUNIFU~1.DLL|Bunifu_UI_v1.52.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Bunifu_UI_v1.52.dll" SelfReg="false" NextFile="EnvDTE.dll"/>
-    <ROW File="Createdatabase.bat" Component_="Createdatabase.bat" FileName="CREATE~1.BAT|Create database.bat" Attributes="0" SourcePath="C:\Users\anhkh\Desktop\Data\Create database.bat" SelfReg="false" NextFile="data.sql"/>
+    <ROW File="Createdatabase.bat" Component_="Createdatabase.bat" FileName="CREATE~1.BAT|Create database.bat" Attributes="0" SourcePath="..\..\..\..\..\Desktop\Data\Create database.bat" SelfReg="false" NextFile="data.sql"/>
     <ROW File="EnvDTE.dll" Component_="EnvDTE.dll" FileName="EnvDTE.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\EnvDTE.dll" SelfReg="false" NextFile="EnvDTE80.dll"/>
     <ROW File="EnvDTE80.dll" Component_="EnvDTE80.dll" FileName="EnvDTE80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\EnvDTE80.dll" SelfReg="false" NextFile="Microsoft.Build.Framework.dll"/>
     <ROW File="Microsoft.Build.Framework.dll" Component_="Microsoft.Build.Framework.dll" FileName="MICROS~1.DLL|Microsoft.Build.Framework.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.Build.Framework.dll" SelfReg="false" NextFile="Microsoft.Build.Tasks.Core.dll"/>
@@ -231,8 +231,8 @@
     <ROW File="RestaurantAK.exe" Component_="RestaurantAK.exe" FileName="RESTAU~1.EXE|RestaurantAK.exe" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.exe" SelfReg="false" NextFile="Microsoft.ReportViewer.Common.resources.dll" DigSign="true"/>
     <ROW File="RestaurantAK.exe.config" Component_="Microsoft.VisualStudio.TemplateWizardInterface.xml" FileName="RESTAU~1.CON|RestaurantAK.exe.config" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.exe.config" SelfReg="false" NextFile="RestaurantAK.pdb"/>
     <ROW File="RestaurantAK.pdb" Component_="RestaurantAK.exe" FileName="RESTAU~1.PDB|RestaurantAK.pdb" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.pdb" SelfReg="false" NextFile="stdole.dll"/>
-    <ROW File="SQLCMD.EXE" Component_="SQLCMD.EXE" FileName="SQLCMD.EXE" Attributes="2" SourcePath="C:\Users\anhkh\Desktop\Data\SQLCMD.EXE" SelfReg="false" NextFile="SQLCMD.rll" DigSign="true"/>
-    <ROW File="SQLCMD.rll" Component_="Createdatabase.bat" FileName="SQLCMD.rll" Attributes="2" SourcePath="C:\Users\anhkh\Desktop\Data\SQLCMD.rll" SelfReg="false"/>
+    <ROW File="SQLCMD.EXE" Component_="SQLCMD.EXE" FileName="SQLCMD.EXE" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\SQLCMD.EXE" SelfReg="false" NextFile="SQLCMD.rll" DigSign="true"/>
+    <ROW File="SQLCMD.rll" Component_="Createdatabase.bat" FileName="SQLCMD.rll" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\SQLCMD.rll" SelfReg="false"/>
     <ROW File="SqlServerSpatial140.dll" Component_="SqlServerSpatial140.dll" FileName="SQLSER~1.DLL|SqlServerSpatial140.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll" SelfReg="false" NextFile="msvcr120.dll_1"/>
     <ROW File="SqlServerSpatial140.dll_1" Component_="SqlServerSpatial140.dll_1" FileName="SQLSER~1.DLL|SqlServerSpatial140.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll" SelfReg="false" NextFile="UserControlHoaDon.cs"/>
     <ROW File="System.Threading.Tasks.Dataflow.dll" Component_="System.Threading.Tasks.Dataflow.dll" FileName="SYSTEM~1.DLL|System.Threading.Tasks.Dataflow.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\System.Threading.Tasks.Dataflow.dll" SelfReg="false" NextFile="VSLangProj.dll"/>
@@ -246,8 +246,8 @@
     <ROW File="VSLangProj.dll" Component_="VSLangProj.dll" FileName="VSLANG~1.DLL|VSLangProj.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj.dll" SelfReg="false" NextFile="VSLangProj2.dll"/>
     <ROW File="VSLangProj2.dll" Component_="VSLangProj2.dll" FileName="VSLANG~2.DLL|VSLangProj2.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj2.dll" SelfReg="false" NextFile="VSLangProj80.dll"/>
     <ROW File="VSLangProj80.dll" Component_="VSLangProj80.dll" FileName="VSLANG~3.DLL|VSLangProj80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj80.dll" SelfReg="false" NextFile="Thesquid.inkFreeFlatSampleOwl.ico"/>
-    <ROW File="batchparser.dll" Component_="batchparser.dll" FileName="BATCHP~1.DLL|batchparser.dll" Attributes="2" SourcePath="C:\Users\anhkh\Desktop\Data\batchparser.dll" SelfReg="false" NextFile="Createdatabase.bat"/>
-    <ROW File="data.sql" Component_="Createdatabase.bat" FileName="data.sql" Attributes="0" SourcePath="C:\Users\anhkh\Desktop\Data\data.sql" SelfReg="false" NextFile="SQLCMD.EXE"/>
+    <ROW File="batchparser.dll" Component_="batchparser.dll" FileName="BATCHP~1.DLL|batchparser.dll" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\batchparser.dll" SelfReg="false" NextFile="Createdatabase.bat"/>
+    <ROW File="data.sql" Component_="Createdatabase.bat" FileName="data.sql" Attributes="0" SourcePath="..\..\..\..\..\Desktop\Data\data.sql" SelfReg="false" NextFile="SQLCMD.EXE"/>
     <ROW File="msvcr120.dll" Component_="msvcr120.dll" FileName="msvcr120.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x64\msvcr120.dll" SelfReg="false" NextFile="SqlServerSpatial140.dll"/>
     <ROW File="msvcr120.dll_1" Component_="msvcr120.dll_1" FileName="msvcr120.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x86\msvcr120.dll" SelfReg="false" NextFile="SqlServerSpatial140.dll_1"/>
     <ROW File="stdole.dll" Component_="stdole.dll" FileName="stdole.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\stdole.dll" SelfReg="false" NextFile="System.Threading.Tasks.Dataflow.dll"/>
@@ -259,7 +259,7 @@
     <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Restaurant-SetupFiles" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\Thesquid.ink-Free-Flat-Sample-Owl.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="SetupAK"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Restaurant-SetupFiles" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="2" PackageType="1" FilesInsideExe="true" ExeIconPath="..\..\Thesquid.ink-Free-Flat-Sample-Owl.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="SetupAK"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
