@@ -203,7 +203,6 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\p
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csprojAssemblyReference.cache
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.exe.config
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.fMain.resources
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.fReport.resources

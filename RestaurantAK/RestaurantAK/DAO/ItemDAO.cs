@@ -23,21 +23,14 @@ namespace RestaurantAK.DAO
         public List<Items> LoadItems()
         {
             List<Items> itemslist = new List<Items>();
-            SqlConnection conn = new SqlConnection(Manager.AppSettings.Get("strcon"));
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("sp_ShowItems", conn);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable tb = new DataTable();
-            adapter.Fill(tb);
-            conn.Close();
-            foreach (DataRow item in tb.Rows)
+            DataTable data = ConnectionDAO.Ins.ExecuteQuery("sp_ShowItems");
+            foreach (DataRow item in data.Rows)
             {
                 Items items = new Items(item);
                 itemslist.Add(items);
             }
             return itemslist;
         }
-
         public bool AddItem(string Name, double Price)
         {
             int re = ConnectionDAO.Ins.ExecuteNonQuery("sp_AddItem @OrderID , @ItemID", new object[] { Name, Price });

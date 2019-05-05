@@ -62,7 +62,15 @@ namespace RestaurantAK.UserController
         {
             if (ItemDAO.Ins.AddItem(txbName.Text, double.Parse(nbPrice.Value.ToString())))
             {
-                LoadDATA();
+                try
+                {
+                    LoadDATA();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
         }
     }
