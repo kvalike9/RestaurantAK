@@ -16,6 +16,7 @@
     <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPPRODUCTICON" Value="Thesquid.inkFreeFlatSampleOwl.exe" Type="8"/>
     <ROW Property="ARPURLINFOABOUT" Value="www.facebook.com/kva99"/>
+    <ROW Property="AiPreventAutoPin" Value="System.AppUserModel.ExcludeFromShowInNewInstall"/>
     <ROW Property="Manufacturer" Value="Vũ Anh Khoa"/>
     <ROW Property="ProductCode" Value="1033:{BB526D99-C29A-4F2F-9A45-A77A2F79A63C} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
@@ -34,7 +35,6 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
-    <ROW Directory="Data_Dir" Directory_Parent="APPDIR" DefaultDir="Data"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="SqlServerTypes_Dir" Directory_Parent="APPDIR" DefaultDir="SQLSER~1|SqlServerTypes"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
@@ -54,107 +54,103 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_ExePath" ComponentId="{6F057763-90EF-4EE8-8565-2A8E7B40055C}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
-    <ROW Component="Bunifu_UI_v1.52.dll" ComponentId="{DEBED026-824D-49CF-9C85-AB7A93BA0EB7}" Directory_="APPDIR" Attributes="0" KeyPath="Bunifu_UI_v1.52.dll"/>
-    <ROW Component="Createdatabase.bat" ComponentId="{B6BDFD2B-A796-4387-A94B-60ADEAC5A326}" Directory_="Data_Dir" Attributes="0" KeyPath="Createdatabase.bat" Type="0"/>
-    <ROW Component="EnvDTE.dll" ComponentId="{A4A733D2-DA4A-4B9D-948E-4A0ECD70F191}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE.dll"/>
-    <ROW Component="EnvDTE80.dll" ComponentId="{DD267EA6-6CA2-4D3D-95A2-1E6DA890D634}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE80.dll"/>
-    <ROW Component="Microsoft.Build.Framework.dll" ComponentId="{9D42602F-607D-46FE-9FF1-A400D2A5D789}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Framework.dll"/>
-    <ROW Component="Microsoft.Build.Tasks.Core.dll" ComponentId="{DBCC7F47-B2B0-4272-A794-7B7AFD5187D9}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Tasks.Core.dll"/>
-    <ROW Component="Microsoft.Build.Utilities.Core.dll" ComponentId="{CFEAB12F-4C1A-4C4B-BC90-26B7C81F4E76}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Utilities.Core.dll"/>
-    <ROW Component="Microsoft.MSXML.dll" ComponentId="{BE96A041-EB56-4A8B-8712-BA43BAA2CAD1}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MSXML.dll"/>
-    <ROW Component="Microsoft.ReportViewer.Common.dll" ComponentId="{F5A7A6E6-08CF-4AC1-8485-2905112C5630}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.dll"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll" ComponentId="{8CD8CAAE-8C62-4420-A540-589137F8954A}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_1" ComponentId="{CACF35A5-DAE9-4E2F-A1EE-B95EBD40FD5D}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_1"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_2" ComponentId="{8C4F8EF0-F82F-4D78-A859-A5F8253358D7}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_2"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_3" ComponentId="{7FCDA1E4-5AB5-4C72-B230-21D28999F8CF}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_3"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_4" ComponentId="{0AC6926D-D077-4637-9185-61C6F1E6A298}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_4"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_5" ComponentId="{7A80227B-A442-46D4-A40F-178AA0129907}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_5"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_6" ComponentId="{7A73D121-10EF-4E63-A2AD-6F0E106540AA}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_6"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_7" ComponentId="{FE03C493-5BF7-4BEE-9BDD-4E0CEDC308AE}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_7"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_8" ComponentId="{585C9D5C-1ECD-41F3-9238-2BDEDE567481}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_8"/>
-    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_9" ComponentId="{D4A29C78-4DF9-475E-BD0A-B4540FE89DB0}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_9"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.dll" ComponentId="{1054AAF7-53D4-44E1-98C1-F446B458DF68}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.dll"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll" ComponentId="{B76F79E4-3E25-4999-8870-50F192245CFD}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_1" ComponentId="{280B284C-E6BC-455D-AC27-0CF4A99DDEB4}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_1"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_2" ComponentId="{5E36AC21-9526-42A1-851C-1D953CD9B80E}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_2"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_3" ComponentId="{E1464BC3-BDF6-4E13-A366-668D4EE32D26}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_3"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_4" ComponentId="{BECA562D-E134-4CDF-AE72-32AA127B66DF}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_4"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_5" ComponentId="{174BA1BB-BFA7-4BAD-B927-8E83CC404A1D}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_5"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_6" ComponentId="{3B57E58B-9E85-403B-A576-7F38EEAEFA0D}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_6"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_7" ComponentId="{992F8535-11E9-4174-9F28-9B5F3507DE5C}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_7"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_8" ComponentId="{A7AA9957-FD2E-426B-8EF3-5BBF1F428B69}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_8"/>
-    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_9" ComponentId="{4742F433-29A6-43E3-AFC9-E9C69D7473DB}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_9"/>
-    <ROW Component="Microsoft.ReportViewer.Design.dll" ComponentId="{1811A19A-3E99-46EA-A531-76F37DB61F5E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.dll"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll" ComponentId="{D3E1B9E5-03C6-4567-9514-1A8949AC0750}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_1" ComponentId="{91E06E05-3751-4AD3-8CCA-D7CDA011C5E3}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_1"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_2" ComponentId="{3B0EF62F-2B3C-433D-803F-5724936A14A6}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_2"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_3" ComponentId="{1AD15BAC-840F-4977-9279-49F936F50DF7}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_3"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_4" ComponentId="{0D9A60BE-AED8-4218-AAE5-48592F90594C}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_4"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_5" ComponentId="{2E1A9A4D-F716-411A-996A-BCEA0DB9196D}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_5"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_6" ComponentId="{0ADE7191-7F4A-4A4A-87A8-54C50714AA69}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_6"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_7" ComponentId="{201FE25F-6F7F-4A45-95D9-84BB8144B011}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_7"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_8" ComponentId="{1F042FFB-54D3-40C2-B39F-BF31DEF00143}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_8"/>
-    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_9" ComponentId="{90BE37D5-C0EF-47A5-BBBE-0F38FF1020C4}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_9"/>
-    <ROW Component="Microsoft.ReportViewer.ProcessingObjectModel.dll" ComponentId="{EBE5E714-531F-4591-9621-B5660FC9168C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.ProcessingObjectModel.dll"/>
-    <ROW Component="Microsoft.ReportViewer.WebForms.DLL" ComponentId="{2EA8F597-6271-4D1F-A41E-35029A2C5AFC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.WebForms.DLL"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.dll" ComponentId="{2D783A77-E709-4595-B0FD-989C7A5804F0}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.dll"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll" ComponentId="{1C7F3C58-2EA5-4514-AB5E-CD0100CB7679}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_1" ComponentId="{B87CFDFC-6FF1-468A-A84D-F39B1B6AEC73}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_1"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_2" ComponentId="{158C02AF-23D6-43B2-A13C-E8FCB477E1EE}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_2"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_3" ComponentId="{71655120-5A3A-4E9B-8FC3-F147DF49D405}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_3"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_4" ComponentId="{06DDD56F-EC28-4F36-83FB-3F7220042F66}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_4"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_5" ComponentId="{F2F20F93-CDF4-4BF2-AADC-9AFD855CEA1C}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_5"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_6" ComponentId="{7F0C7C92-184D-41E0-B3A6-2E3F59B91E76}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_6"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_7" ComponentId="{F344A0BB-0D14-47F8-A74E-067CFA2B2710}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_7"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_8" ComponentId="{513492A8-65F6-4D87-8940-CBFADF252B0C}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_8"/>
-    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_9" ComponentId="{B7FC3FBF-4FF3-4CB4-B44C-6702E65AADAA}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_9"/>
-    <ROW Component="Microsoft.SqlServer.Types.dll" ComponentId="{71519ACD-CBA2-4DD7-8C3B-EE558D9CB5AB}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Types.dll"/>
-    <ROW Component="Microsoft.VisualStudio.ComponentModelHost.dll" ComponentId="{F7026AF3-C6F0-4BD2-AC73-6CD28DCBF339}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ComponentModelHost.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Data.Core.dll" ComponentId="{07853DDF-3B91-4A27-A04F-613FCBA3EC39}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Data.Core.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Data.Services.dll" ComponentId="{DBA9706E-F059-4479-9A44-92A7E8A429C4}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Data.Services.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Debugger.Interop.11.0.dll" ComponentId="{9470A4CD-F23C-412D-867E-C7E0F1F7FA1B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Debugger.Interop.11.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Debugger.InteropA.dll" ComponentId="{EAE29F14-2491-4298-A34E-65C2BC356D81}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Debugger.InteropA.dll"/>
-    <ROW Component="Microsoft.VisualStudio.GraphModel.dll" ComponentId="{A514BB66-ED50-4DBA-9C1B-CBD034E2E0AC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.GraphModel.dll"/>
-    <ROW Component="Microsoft.VisualStudio.ManagedInterfaces.dll" ComponentId="{7390D73F-5C0D-4351-83AF-3A145C756F2F}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ManagedInterfaces.dll"/>
-    <ROW Component="Microsoft.VisualStudio.OLE.Interop.dll" ComponentId="{993F46A6-60A5-4EDD-AFF1-C8B386DF8F43}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.OLE.Interop.dll"/>
-    <ROW Component="Microsoft.VisualStudio.ProjectAggregator.dll" ComponentId="{9E2B1EA7-5AF8-41C8-869A-E94C3DD48481}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ProjectAggregator.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Shell.Interop.10.0.dll" ComponentId="{99B0DA69-6724-41B0-AFD2-1CCED5689626}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.10.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Shell.Interop.11.0.dll" ComponentId="{80DB7EC3-6FE4-4013-BB3D-A98058101338}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.11.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Shell.Interop.8.0.dll" ComponentId="{76067BF9-F5E0-4CF7-AEBD-84A17CC007BF}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.8.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Shell.Interop.9.0.dll" ComponentId="{E54713D8-279C-4E85-8C92-E8B557F52A99}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.9.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.Shell.Interop.dll" ComponentId="{E5E1899B-DC19-4946-8C91-C5B130A0DD1A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.dll"/>
-    <ROW Component="Microsoft.VisualStudio.TemplateWizardInterface.dll" ComponentId="{0EC92068-E4AD-4ED8-BDE5-45690B3471A6}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TemplateWizardInterface.dll"/>
-    <ROW Component="Microsoft.VisualStudio.TemplateWizardInterface.xml" ComponentId="{CC917F43-6B97-47FC-B25D-FD5550DE3F3F}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TemplateWizardInterface.xml" Type="0"/>
-    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.10.0.dll" ComponentId="{AB66B555-F13F-4260-88EF-8559E151DA5A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.10.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" ComponentId="{3F137B97-4E40-4E10-8F92-6071C3F47982}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.8.0.dll"/>
-    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.dll" ComponentId="{AC3B3E49-80B4-476B-B442-C701DAAA6085}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.dll"/>
-    <ROW Component="Microsoft.VisualStudio.VSHelp.dll" ComponentId="{F5DFB428-D1B8-477C-BC41-DF0B86F07C64}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.VSHelp.dll"/>
-    <ROW Component="Newtonsoft.Json.dll" ComponentId="{2C43039C-06F9-4532-867B-06B70381ADD9}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Bunifu_UI_v1.52.dll" ComponentId="{EDF24BDC-F976-478B-BAB0-5EDC3190BA93}" Directory_="APPDIR" Attributes="0" KeyPath="Bunifu_UI_v1.52.dll"/>
+    <ROW Component="EnvDTE.dll" ComponentId="{3B7B0741-B01A-4AC4-B4FA-6D3FEA4E52F9}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE.dll"/>
+    <ROW Component="EnvDTE80.dll" ComponentId="{97932F02-10CC-4672-ABF1-66F1DDAF1D14}" Directory_="APPDIR" Attributes="0" KeyPath="EnvDTE80.dll"/>
+    <ROW Component="Microsoft.Build.Framework.dll" ComponentId="{655B526D-5404-459F-ADDB-E25418F2B6A5}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Framework.dll"/>
+    <ROW Component="Microsoft.Build.Tasks.Core.dll" ComponentId="{18920890-9FA4-49B3-9C58-D566A61B8EE1}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Tasks.Core.dll"/>
+    <ROW Component="Microsoft.Build.Utilities.Core.dll" ComponentId="{0336C40C-84C2-4CE0-AF7A-F1387ACCEF21}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Utilities.Core.dll"/>
+    <ROW Component="Microsoft.MSXML.dll" ComponentId="{DE0499E8-2E19-4D5F-8639-B2A21AC0AD6C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.MSXML.dll"/>
+    <ROW Component="Microsoft.ReportViewer.Common.dll" ComponentId="{AC51FF70-D417-417A-9A0A-14F6566A9764}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.dll"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll" ComponentId="{B5178A4E-69B7-4A20-AD17-381D13E6C448}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_1" ComponentId="{EFB7DA7E-251F-4B39-9F24-F158FA7905DB}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_1"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_2" ComponentId="{562C1DB5-1020-40D5-B940-E1AE1E563586}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_2"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_3" ComponentId="{32D8C539-3B34-4430-965B-C1C36C55C749}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_3"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_4" ComponentId="{CF70E91D-96EA-464A-8C60-608B0000024C}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_4"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_5" ComponentId="{DFC7E8D9-A85E-4019-8827-A0E7671E199F}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_5"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_6" ComponentId="{BD09E5C4-32FB-4497-9857-2814408398B9}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_6"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_7" ComponentId="{8AF622EA-522F-4793-AC50-504FD150CDD2}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_7"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_8" ComponentId="{8C22E5A6-6F6E-430B-BCC8-EAB8C4A1A54B}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_8"/>
+    <ROW Component="Microsoft.ReportViewer.Common.resources.dll_9" ComponentId="{6DCFA03C-4FC4-4B44-8FBC-9F8E4D73CD8F}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Common.resources.dll_9"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.dll" ComponentId="{CCEC7C28-D876-4600-826F-835181A866A0}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.dll"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll" ComponentId="{5E1EA33E-F04D-4AA2-B0EC-160BB99DCCB8}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_1" ComponentId="{12DC9B01-D2DE-492F-A8BB-5F9645252C67}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_1"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_2" ComponentId="{18AF7E42-B4EA-4E50-938E-3DFCDA5986F8}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_2"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_3" ComponentId="{52EA56A1-121D-4395-A8A7-A6F33E0E1263}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_3"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_4" ComponentId="{38A63E56-7790-496A-9E7E-C3DA16D52916}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_4"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_5" ComponentId="{1775044C-963C-432A-93C0-12A5ABA03C20}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_5"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_6" ComponentId="{1848ABE2-FB0D-4183-97D2-2D25D89A3A6C}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_6"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_7" ComponentId="{53B4A0E1-8850-4FE8-8CC9-87AE325465EC}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_7"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_8" ComponentId="{8F5C7495-64A0-47F3-A41D-4ACB99481FE7}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_8"/>
+    <ROW Component="Microsoft.ReportViewer.DataVisualization.resources.dll_9" ComponentId="{D621B18B-902D-4C4A-89AD-7ECC767ABBC4}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.DataVisualization.resources.dll_9"/>
+    <ROW Component="Microsoft.ReportViewer.Design.dll" ComponentId="{B37A08E2-7D4E-4125-A7DC-B0D91657B5EB}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.dll"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll" ComponentId="{605614CC-7356-43B5-A41E-201CE248D42D}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_1" ComponentId="{AD8A38F1-DCB7-4CE3-8FA9-B2A4EFB7E5E9}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_1"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_2" ComponentId="{E8934FA0-FE0C-4FC3-A3C1-7FC07F965B65}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_2"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_3" ComponentId="{F2066EE5-8F34-4F63-A70F-52BBEB798C1E}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_3"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_4" ComponentId="{27099D66-1446-41DC-AE79-46EF98A6A8C7}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_4"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_5" ComponentId="{9C5166D9-1008-4147-990C-489B9A9FFD9C}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_5"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_6" ComponentId="{71118CB4-F29E-4568-A096-2763C03ECB05}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_6"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_7" ComponentId="{1E32E539-ED64-488A-9FA0-23D76B18BBE0}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_7"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_8" ComponentId="{B413D3C7-28C1-4441-B6E5-A19050141D98}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_8"/>
+    <ROW Component="Microsoft.ReportViewer.Design.resources.dll_9" ComponentId="{E2F28775-11F1-454E-9902-5C7D9CA7F2B5}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.Design.resources.dll_9"/>
+    <ROW Component="Microsoft.ReportViewer.ProcessingObjectModel.dll" ComponentId="{DC0BD83F-2F65-4AFB-8757-2537E400E509}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.ProcessingObjectModel.dll"/>
+    <ROW Component="Microsoft.ReportViewer.WebForms.DLL" ComponentId="{DCFBFD6D-FBB0-4441-8FEC-A03FCB33993A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.WebForms.DLL"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.dll" ComponentId="{E655EDA9-6F8A-4021-A2EA-1A7049B6CD8B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.dll"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll" ComponentId="{BF7A67C4-5CC7-4493-8B15-171210984F63}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_1" ComponentId="{6AF24A04-3B51-460E-871B-B2A2DF22E865}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_1"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_2" ComponentId="{5E5A70A0-C09B-415F-8A4A-8E07DC7F492D}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_2"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_3" ComponentId="{B965D422-AD43-4767-82B3-5CF13D5AD01B}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_3"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_4" ComponentId="{CB2A4B95-52BD-4A40-8AD2-AE84B6BB1266}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_4"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_5" ComponentId="{69234E93-A029-4326-B8A8-A469F0DC7A43}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_5"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_6" ComponentId="{5B04EB89-3FDE-4538-B27E-0CAA2A8D8B8B}" Directory_="pt_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_6"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_7" ComponentId="{5703BF10-F385-4BDE-8E15-6112DACA3633}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_7"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_8" ComponentId="{4539F894-E6EA-480F-8810-F4C58E75FA7D}" Directory_="zhCHS_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_8"/>
+    <ROW Component="Microsoft.ReportViewer.WinForms.resources.dll_9" ComponentId="{54894F3C-1CA3-4A23-83FC-894E34EF0527}" Directory_="zhCHT_Dir" Attributes="0" KeyPath="Microsoft.ReportViewer.WinForms.resources.dll_9"/>
+    <ROW Component="Microsoft.SqlServer.Types.dll" ComponentId="{3BC3B9B8-72F0-4160-A3CA-2211C03688A0}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Types.dll"/>
+    <ROW Component="Microsoft.VisualStudio.ComponentModelHost.dll" ComponentId="{94A9311E-4E2F-4517-B9BA-43FB531F869D}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ComponentModelHost.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Data.Core.dll" ComponentId="{E28B0798-19F1-4069-BC8F-73E22FC7C412}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Data.Core.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Data.Services.dll" ComponentId="{82F51968-602B-4962-A3F1-21D9341D8942}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Data.Services.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Debugger.Interop.11.0.dll" ComponentId="{F8D487BA-F777-45FF-A0AE-8B8C65CEE253}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Debugger.Interop.11.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Debugger.InteropA.dll" ComponentId="{9A0E1638-E17A-45C8-AAFB-13E470F51E1A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Debugger.InteropA.dll"/>
+    <ROW Component="Microsoft.VisualStudio.GraphModel.dll" ComponentId="{715914D5-3B72-4D80-A662-826FD46EF806}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.GraphModel.dll"/>
+    <ROW Component="Microsoft.VisualStudio.ManagedInterfaces.dll" ComponentId="{368B457E-CC84-40F9-8D87-DBE5E3AC99DC}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ManagedInterfaces.dll"/>
+    <ROW Component="Microsoft.VisualStudio.OLE.Interop.dll" ComponentId="{F03BCE2D-AA8E-42D8-BB1D-8C2C9D0A4E1D}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.OLE.Interop.dll"/>
+    <ROW Component="Microsoft.VisualStudio.ProjectAggregator.dll" ComponentId="{28F7B1BB-EE72-4EC7-9BC6-1C5D0220C29B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.ProjectAggregator.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.10.0.dll" ComponentId="{A34746A5-54E8-4530-90A5-76FDB7E7771E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.10.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.11.0.dll" ComponentId="{45E7BD73-4995-4348-9329-4D8399707808}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.11.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.8.0.dll" ComponentId="{AC76DBEE-E28F-41AD-A4B6-6B60192659AE}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.8.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.9.0.dll" ComponentId="{4988C880-5949-4DDD-8BBC-2675816992C7}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.9.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.Shell.Interop.dll" ComponentId="{8305CA8D-CC26-4485-B225-64B5EAF6FBDB}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.Shell.Interop.dll"/>
+    <ROW Component="Microsoft.VisualStudio.TemplateWizardInterface.dll" ComponentId="{21120135-F3CA-4AC1-BC90-6F203120F2B7}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TemplateWizardInterface.dll"/>
+    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.10.0.dll" ComponentId="{1CB44B0E-1768-4119-A1A2-DBC7E82174D1}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.10.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" ComponentId="{1ACE4B53-AC14-45A8-B947-FB9B8CE08396}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.8.0.dll"/>
+    <ROW Component="Microsoft.VisualStudio.TextManager.Interop.dll" ComponentId="{E45AF06F-EB51-44D0-977E-82282752721A}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.TextManager.Interop.dll"/>
+    <ROW Component="Microsoft.VisualStudio.VSHelp.dll" ComponentId="{28DED4DB-5314-46FF-9DBE-2F37B40A14D3}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualStudio.VSHelp.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{1CD9D23C-0A30-41B5-82CA-FFFF41754F52}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
     <ROW Component="ProductInformation" ComponentId="{D6F06D06-3EC5-41B4-B3E2-73D4EB3A42DA}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="RestaurantAK.exe" ComponentId="{7AA3E956-EBA1-43EE-8A26-4A76D6A654F8}" Directory_="APPDIR" Attributes="0" KeyPath="RestaurantAK.exe"/>
-    <ROW Component="SQLCMD.EXE" ComponentId="{69DAAC92-3EC5-4ADA-BE93-E9E8C97B0503}" Directory_="Data_Dir" Attributes="256" KeyPath="SQLCMD.EXE"/>
-    <ROW Component="SqlServerSpatial140.dll" ComponentId="{3CF6EEA1-8231-43E9-9B91-B3181B62C934}" Directory_="x64_Dir" Attributes="256" KeyPath="SqlServerSpatial140.dll"/>
-    <ROW Component="SqlServerSpatial140.dll_1" ComponentId="{CFFD9616-DE4F-4F9D-AB51-D85D999CA503}" Directory_="x86_Dir" Attributes="0" KeyPath="SqlServerSpatial140.dll_1"/>
-    <ROW Component="System.Threading.Tasks.Dataflow.dll" ComponentId="{8207E5B5-DC59-4151-BB22-E4BC1CCE6796}" Directory_="APPDIR" Attributes="0" KeyPath="System.Threading.Tasks.Dataflow.dll"/>
-    <ROW Component="Thesquid.inkFreeFlatSampleOwl.ico" ComponentId="{0080112D-35BD-47B1-8FF7-9902A1389804}" Directory_="SHORTCUTDIR" Attributes="0" KeyPath="Thesquid.inkFreeFlatSampleOwl.ico" Type="0"/>
-    <ROW Component="UserControlHoaDon.cs" ComponentId="{351FF04F-E2B9-4DC4-A7CF-16A6810ACA3D}" Directory_="UserController_Dir" Attributes="0" KeyPath="UserControlHoaDon.cs" Type="0"/>
-    <ROW Component="VSLangProj.dll" ComponentId="{4009194D-2708-4E1F-BF9A-2FAD1C7A4399}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj.dll"/>
-    <ROW Component="VSLangProj2.dll" ComponentId="{C267AFA8-C86A-4355-93BC-9A1C11311A79}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj2.dll"/>
-    <ROW Component="VSLangProj80.dll" ComponentId="{E0F02CC8-3B34-4D62-8C3C-93A52035C14D}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj80.dll"/>
-    <ROW Component="batchparser.dll" ComponentId="{41A77B5D-47C0-4C52-97C1-28E912E89DB0}" Directory_="Data_Dir" Attributes="256" KeyPath="batchparser.dll"/>
-    <ROW Component="msvcr120.dll" ComponentId="{1E0D3E21-7324-403F-8900-1073F541EAC7}" Directory_="x64_Dir" Attributes="256" KeyPath="msvcr120.dll"/>
-    <ROW Component="msvcr120.dll_1" ComponentId="{C28C03C7-9BCB-467E-9DE3-AAF04F7DA5C1}" Directory_="x86_Dir" Attributes="0" KeyPath="msvcr120.dll_1"/>
-    <ROW Component="stdole.dll" ComponentId="{475FD166-08D2-4F44-97B3-877C0FAB27C5}" Directory_="APPDIR" Attributes="0" KeyPath="stdole.dll"/>
+    <ROW Component="ReportItem.rdlc" ComponentId="{6989C9A3-BA30-46BD-A3C7-45D204D1EEE8}" Directory_="APPDIR" Attributes="0" KeyPath="ReportItem.rdlc" Type="0"/>
+    <ROW Component="RestaurantAK.exe" ComponentId="{35D9EE2F-0036-40D0-B0B0-511519081BDF}" Directory_="APPDIR" Attributes="0" KeyPath="RestaurantAK.exe"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{C2299C72-B326-496D-9D61-21D643D4CE6B}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SqlServerSpatial140.dll" ComponentId="{F01BF64C-031D-4367-9BD3-FC42E20B701C}" Directory_="x64_Dir" Attributes="256" KeyPath="SqlServerSpatial140.dll"/>
+    <ROW Component="SqlServerSpatial140.dll_1" ComponentId="{FF0B70C4-77A2-4BEC-90D3-89FAB38DA7CE}" Directory_="x86_Dir" Attributes="0" KeyPath="SqlServerSpatial140.dll_1"/>
+    <ROW Component="System.Threading.Tasks.Dataflow.dll" ComponentId="{2BEBEAC2-9DE3-4038-BA94-0AAA5BA8864F}" Directory_="APPDIR" Attributes="0" KeyPath="System.Threading.Tasks.Dataflow.dll"/>
+    <ROW Component="UserControlHoaDon.cs" ComponentId="{CFFDDEFC-3E90-4C41-AAF5-06B66BEA140B}" Directory_="UserController_Dir" Attributes="0" KeyPath="UserControlHoaDon.cs" Type="0"/>
+    <ROW Component="VSLangProj.dll" ComponentId="{A16E0DFF-97D3-4E5D-A5F5-8A5F0750C63A}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj.dll"/>
+    <ROW Component="VSLangProj2.dll" ComponentId="{C07663BF-CDD5-4C24-AC13-63847EA0675C}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj2.dll"/>
+    <ROW Component="VSLangProj80.dll" ComponentId="{7D3E9D20-5278-476D-B5A9-22A87FCE6D9B}" Directory_="APPDIR" Attributes="0" KeyPath="VSLangProj80.dll"/>
+    <ROW Component="msvcr120.dll" ComponentId="{4498CB9C-C380-466D-8603-36CA3E1C6724}" Directory_="x64_Dir" Attributes="256" KeyPath="msvcr120.dll"/>
+    <ROW Component="msvcr120.dll_1" ComponentId="{DCD1B675-80B7-4313-8EF1-696530180113}" Directory_="x86_Dir" Attributes="0" KeyPath="msvcr120.dll_1"/>
+    <ROW Component="stdole.dll" ComponentId="{48825C88-4808-4E60-B622-4E553FF8EBD1}" Directory_="APPDIR" Attributes="0" KeyPath="stdole.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath Bunifu_UI_v1.52.dll Createdatabase.bat EnvDTE.dll EnvDTE80.dll Microsoft.Build.Framework.dll Microsoft.Build.Tasks.Core.dll Microsoft.Build.Utilities.Core.dll Microsoft.MSXML.dll Microsoft.ReportViewer.Common.dll Microsoft.ReportViewer.Common.resources.dll Microsoft.ReportViewer.Common.resources.dll_1 Microsoft.ReportViewer.Common.resources.dll_2 Microsoft.ReportViewer.Common.resources.dll_3 Microsoft.ReportViewer.Common.resources.dll_4 Microsoft.ReportViewer.Common.resources.dll_5 Microsoft.ReportViewer.Common.resources.dll_6 Microsoft.ReportViewer.Common.resources.dll_7 Microsoft.ReportViewer.Common.resources.dll_8 Microsoft.ReportViewer.Common.resources.dll_9 Microsoft.ReportViewer.DataVisualization.dll Microsoft.ReportViewer.DataVisualization.resources.dll Microsoft.ReportViewer.DataVisualization.resources.dll_1 Microsoft.ReportViewer.DataVisualization.resources.dll_2 Microsoft.ReportViewer.DataVisualization.resources.dll_3 Microsoft.ReportViewer.DataVisualization.resources.dll_4 Microsoft.ReportViewer.DataVisualization.resources.dll_5 Microsoft.ReportViewer.DataVisualization.resources.dll_6 Microsoft.ReportViewer.DataVisualization.resources.dll_7 Microsoft.ReportViewer.DataVisualization.resources.dll_8 Microsoft.ReportViewer.DataVisualization.resources.dll_9 Microsoft.ReportViewer.Design.dll Microsoft.ReportViewer.Design.resources.dll Microsoft.ReportViewer.Design.resources.dll_1 Microsoft.ReportViewer.Design.resources.dll_2 Microsoft.ReportViewer.Design.resources.dll_3 Microsoft.ReportViewer.Design.resources.dll_4 Microsoft.ReportViewer.Design.resources.dll_5 Microsoft.ReportViewer.Design.resources.dll_6 Microsoft.ReportViewer.Design.resources.dll_7 Microsoft.ReportViewer.Design.resources.dll_8 Microsoft.ReportViewer.Design.resources.dll_9 Microsoft.ReportViewer.ProcessingObjectModel.dll Microsoft.ReportViewer.WebForms.DLL Microsoft.ReportViewer.WinForms.dll Microsoft.ReportViewer.WinForms.resources.dll Microsoft.ReportViewer.WinForms.resources.dll_1 Microsoft.ReportViewer.WinForms.resources.dll_2 Microsoft.ReportViewer.WinForms.resources.dll_3 Microsoft.ReportViewer.WinForms.resources.dll_4 Microsoft.ReportViewer.WinForms.resources.dll_5 Microsoft.ReportViewer.WinForms.resources.dll_6 Microsoft.ReportViewer.WinForms.resources.dll_7 Microsoft.ReportViewer.WinForms.resources.dll_8 Microsoft.ReportViewer.WinForms.resources.dll_9 Microsoft.SqlServer.Types.dll Microsoft.VisualStudio.ComponentModelHost.dll Microsoft.VisualStudio.Data.Core.dll Microsoft.VisualStudio.Data.Services.dll Microsoft.VisualStudio.Debugger.Interop.11.0.dll Microsoft.VisualStudio.Debugger.InteropA.dll Microsoft.VisualStudio.GraphModel.dll Microsoft.VisualStudio.ManagedInterfaces.dll Microsoft.VisualStudio.OLE.Interop.dll Microsoft.VisualStudio.ProjectAggregator.dll Microsoft.VisualStudio.Shell.Interop.10.0.dll Microsoft.VisualStudio.Shell.Interop.11.0.dll Microsoft.VisualStudio.Shell.Interop.8.0.dll Microsoft.VisualStudio.Shell.Interop.9.0.dll Microsoft.VisualStudio.Shell.Interop.dll Microsoft.VisualStudio.TemplateWizardInterface.dll Microsoft.VisualStudio.TemplateWizardInterface.xml Microsoft.VisualStudio.TextManager.Interop.10.0.dll Microsoft.VisualStudio.TextManager.Interop.8.0.dll Microsoft.VisualStudio.TextManager.Interop.dll Microsoft.VisualStudio.VSHelp.dll Newtonsoft.Json.dll ProductInformation RestaurantAK.exe SQLCMD.EXE SqlServerSpatial140.dll SqlServerSpatial140.dll_1 System.Threading.Tasks.Dataflow.dll Thesquid.inkFreeFlatSampleOwl.ico UserControlHoaDon.cs VSLangProj.dll VSLangProj2.dll VSLangProj80.dll batchparser.dll msvcr120.dll msvcr120.dll_1 stdole.dll"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath Bunifu_UI_v1.52.dll EnvDTE.dll EnvDTE80.dll Microsoft.Build.Framework.dll Microsoft.Build.Tasks.Core.dll Microsoft.Build.Utilities.Core.dll Microsoft.MSXML.dll Microsoft.ReportViewer.Common.dll Microsoft.ReportViewer.Common.resources.dll Microsoft.ReportViewer.Common.resources.dll_1 Microsoft.ReportViewer.Common.resources.dll_2 Microsoft.ReportViewer.Common.resources.dll_3 Microsoft.ReportViewer.Common.resources.dll_4 Microsoft.ReportViewer.Common.resources.dll_5 Microsoft.ReportViewer.Common.resources.dll_6 Microsoft.ReportViewer.Common.resources.dll_7 Microsoft.ReportViewer.Common.resources.dll_8 Microsoft.ReportViewer.Common.resources.dll_9 Microsoft.ReportViewer.DataVisualization.dll Microsoft.ReportViewer.DataVisualization.resources.dll Microsoft.ReportViewer.DataVisualization.resources.dll_1 Microsoft.ReportViewer.DataVisualization.resources.dll_2 Microsoft.ReportViewer.DataVisualization.resources.dll_3 Microsoft.ReportViewer.DataVisualization.resources.dll_4 Microsoft.ReportViewer.DataVisualization.resources.dll_5 Microsoft.ReportViewer.DataVisualization.resources.dll_6 Microsoft.ReportViewer.DataVisualization.resources.dll_7 Microsoft.ReportViewer.DataVisualization.resources.dll_8 Microsoft.ReportViewer.DataVisualization.resources.dll_9 Microsoft.ReportViewer.Design.dll Microsoft.ReportViewer.Design.resources.dll Microsoft.ReportViewer.Design.resources.dll_1 Microsoft.ReportViewer.Design.resources.dll_2 Microsoft.ReportViewer.Design.resources.dll_3 Microsoft.ReportViewer.Design.resources.dll_4 Microsoft.ReportViewer.Design.resources.dll_5 Microsoft.ReportViewer.Design.resources.dll_6 Microsoft.ReportViewer.Design.resources.dll_7 Microsoft.ReportViewer.Design.resources.dll_8 Microsoft.ReportViewer.Design.resources.dll_9 Microsoft.ReportViewer.ProcessingObjectModel.dll Microsoft.ReportViewer.WebForms.DLL Microsoft.ReportViewer.WinForms.dll Microsoft.ReportViewer.WinForms.resources.dll Microsoft.ReportViewer.WinForms.resources.dll_1 Microsoft.ReportViewer.WinForms.resources.dll_2 Microsoft.ReportViewer.WinForms.resources.dll_3 Microsoft.ReportViewer.WinForms.resources.dll_4 Microsoft.ReportViewer.WinForms.resources.dll_5 Microsoft.ReportViewer.WinForms.resources.dll_6 Microsoft.ReportViewer.WinForms.resources.dll_7 Microsoft.ReportViewer.WinForms.resources.dll_8 Microsoft.ReportViewer.WinForms.resources.dll_9 Microsoft.SqlServer.Types.dll Microsoft.VisualStudio.ComponentModelHost.dll Microsoft.VisualStudio.Data.Core.dll Microsoft.VisualStudio.Data.Services.dll Microsoft.VisualStudio.Debugger.Interop.11.0.dll Microsoft.VisualStudio.Debugger.InteropA.dll Microsoft.VisualStudio.GraphModel.dll Microsoft.VisualStudio.ManagedInterfaces.dll Microsoft.VisualStudio.OLE.Interop.dll Microsoft.VisualStudio.ProjectAggregator.dll Microsoft.VisualStudio.Shell.Interop.10.0.dll Microsoft.VisualStudio.Shell.Interop.11.0.dll Microsoft.VisualStudio.Shell.Interop.8.0.dll Microsoft.VisualStudio.Shell.Interop.9.0.dll Microsoft.VisualStudio.Shell.Interop.dll Microsoft.VisualStudio.TemplateWizardInterface.dll Microsoft.VisualStudio.TextManager.Interop.10.0.dll Microsoft.VisualStudio.TextManager.Interop.8.0.dll Microsoft.VisualStudio.TextManager.Interop.dll Microsoft.VisualStudio.VSHelp.dll Newtonsoft.Json.dll ProductInformation ReportItem.rdlc RestaurantAK.exe SHORTCUTDIR SqlServerSpatial140.dll SqlServerSpatial140.dll_1 System.Threading.Tasks.Dataflow.dll UserControlHoaDon.cs VSLangProj.dll VSLangProj2.dll VSLangProj80.dll msvcr120.dll msvcr120.dll_1 stdole.dll"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="Bunifu_UI_v1.52.dll" Component_="Bunifu_UI_v1.52.dll" FileName="BUNIFU~1.DLL|Bunifu_UI_v1.52.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Bunifu_UI_v1.52.dll" SelfReg="false" NextFile="EnvDTE.dll"/>
-    <ROW File="Createdatabase.bat" Component_="Createdatabase.bat" FileName="CREATE~1.BAT|Create database.bat" Attributes="0" SourcePath="..\..\..\..\..\Desktop\Data\Create database.bat" SelfReg="false" NextFile="data.sql"/>
     <ROW File="EnvDTE.dll" Component_="EnvDTE.dll" FileName="EnvDTE.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\EnvDTE.dll" SelfReg="false" NextFile="EnvDTE80.dll"/>
-    <ROW File="EnvDTE80.dll" Component_="EnvDTE80.dll" FileName="EnvDTE80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\EnvDTE80.dll" SelfReg="false" NextFile="Microsoft.Build.Framework.dll"/>
+    <ROW File="EnvDTE80.dll" Component_="EnvDTE80.dll" FileName="EnvDTE80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\EnvDTE80.dll" SelfReg="false"/>
     <ROW File="Microsoft.Build.Framework.dll" Component_="Microsoft.Build.Framework.dll" FileName="MICROS~1.DLL|Microsoft.Build.Framework.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.Build.Framework.dll" SelfReg="false" NextFile="Microsoft.Build.Tasks.Core.dll"/>
     <ROW File="Microsoft.Build.Tasks.Core.dll" Component_="Microsoft.Build.Tasks.Core.dll" FileName="MICROS~2.DLL|Microsoft.Build.Tasks.Core.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.Build.Tasks.Core.dll" SelfReg="false" NextFile="Microsoft.Build.Utilities.Core.dll"/>
     <ROW File="Microsoft.Build.Utilities.Core.dll" Component_="Microsoft.Build.Utilities.Core.dll" FileName="MICROS~3.DLL|Microsoft.Build.Utilities.Core.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.Build.Utilities.Core.dll" SelfReg="false" NextFile="Microsoft.MSXML.dll"/>
@@ -220,23 +216,18 @@
     <ROW File="Microsoft.VisualStudio.Shell.Interop.8.0.dll" Component_="Microsoft.VisualStudio.Shell.Interop.8.0.dll" FileName="MICRO~21.DLL|Microsoft.VisualStudio.Shell.Interop.8.0.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Interop.8.0.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.Shell.Interop.9.0.dll"/>
     <ROW File="Microsoft.VisualStudio.Shell.Interop.9.0.dll" Component_="Microsoft.VisualStudio.Shell.Interop.9.0.dll" FileName="MICRO~22.DLL|Microsoft.VisualStudio.Shell.Interop.9.0.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Interop.9.0.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.Shell.Interop.10.0.dll"/>
     <ROW File="Microsoft.VisualStudio.Shell.Interop.dll" Component_="Microsoft.VisualStudio.Shell.Interop.dll" FileName="MICRO~25.DLL|Microsoft.VisualStudio.Shell.Interop.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.TemplateWizardInterface.dll"/>
-    <ROW File="Microsoft.VisualStudio.TemplateWizardInterface.dll" Component_="Microsoft.VisualStudio.TemplateWizardInterface.dll" FileName="MICRO~26.DLL|Microsoft.VisualStudio.TemplateWizardInterface.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.TemplateWizardInterface.xml"/>
-    <ROW File="Microsoft.VisualStudio.TemplateWizardInterface.xml" Component_="Microsoft.VisualStudio.TemplateWizardInterface.xml" FileName="MICROS~1.XML|Microsoft.VisualStudio.TemplateWizardInterface.xml" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.xml" SelfReg="false" NextFile="Microsoft.VisualStudio.TextManager.Interop.8.0.dll"/>
+    <ROW File="Microsoft.VisualStudio.TemplateWizardInterface.dll" Component_="Microsoft.VisualStudio.TemplateWizardInterface.dll" FileName="MICRO~26.DLL|Microsoft.VisualStudio.TemplateWizardInterface.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TemplateWizardInterface.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.TextManager.Interop.8.0.dll"/>
     <ROW File="Microsoft.VisualStudio.TextManager.Interop.10.0.dll" Component_="Microsoft.VisualStudio.TextManager.Interop.10.0.dll" FileName="MICRO~28.DLL|Microsoft.VisualStudio.TextManager.Interop.10.0.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TextManager.Interop.10.0.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.TextManager.Interop.dll"/>
     <ROW File="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" Component_="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" FileName="MICRO~27.DLL|Microsoft.VisualStudio.TextManager.Interop.8.0.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.TextManager.Interop.10.0.dll"/>
     <ROW File="Microsoft.VisualStudio.TextManager.Interop.dll" Component_="Microsoft.VisualStudio.TextManager.Interop.dll" FileName="MICRO~29.DLL|Microsoft.VisualStudio.TextManager.Interop.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll" SelfReg="false" NextFile="Microsoft.VisualStudio.VSHelp.dll"/>
     <ROW File="Microsoft.VisualStudio.VSHelp.dll" Component_="Microsoft.VisualStudio.VSHelp.dll" FileName="MICRO~30.DLL|Microsoft.VisualStudio.VSHelp.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Microsoft.VisualStudio.VSHelp.dll" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
     <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\Newtonsoft.Json.dll" SelfReg="false" NextFile="ReportItem.rdlc"/>
-    <ROW File="ReportItem.rdlc" Component_="Microsoft.VisualStudio.TemplateWizardInterface.xml" FileName="REPORT~1.RDL|ReportItem.rdlc" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\ReportItem.rdlc" SelfReg="false" NextFile="RestaurantAK.exe.config"/>
-    <ROW File="RestaurantAK.exe" Component_="RestaurantAK.exe" FileName="RESTAU~1.EXE|RestaurantAK.exe" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.exe" SelfReg="false" NextFile="Microsoft.ReportViewer.Common.resources.dll" DigSign="true"/>
-    <ROW File="RestaurantAK.exe.config" Component_="Microsoft.VisualStudio.TemplateWizardInterface.xml" FileName="RESTAU~1.CON|RestaurantAK.exe.config" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.exe.config" SelfReg="false" NextFile="RestaurantAK.pdb"/>
+    <ROW File="ReportItem.rdlc" Component_="ReportItem.rdlc" FileName="REPORT~1.RDL|ReportItem.rdlc" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\ReportItem.rdlc" SelfReg="false" NextFile="RestaurantAK.exe"/>
+    <ROW File="RestaurantAK.exe" Component_="RestaurantAK.exe" FileName="RESTAU~1.EXE|RestaurantAK.exe" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.exe" SelfReg="false" NextFile="RestaurantAK.pdb" DigSign="true"/>
     <ROW File="RestaurantAK.pdb" Component_="RestaurantAK.exe" FileName="RESTAU~1.PDB|RestaurantAK.pdb" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\RestaurantAK.pdb" SelfReg="false" NextFile="stdole.dll"/>
-    <ROW File="SQLCMD.EXE" Component_="SQLCMD.EXE" FileName="SQLCMD.EXE" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\SQLCMD.EXE" SelfReg="false" NextFile="SQLCMD.rll" DigSign="true"/>
-    <ROW File="SQLCMD.rll" Component_="Createdatabase.bat" FileName="SQLCMD.rll" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\SQLCMD.rll" SelfReg="false"/>
     <ROW File="SqlServerSpatial140.dll" Component_="SqlServerSpatial140.dll" FileName="SQLSER~1.DLL|SqlServerSpatial140.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll" SelfReg="false" NextFile="msvcr120.dll_1"/>
     <ROW File="SqlServerSpatial140.dll_1" Component_="SqlServerSpatial140.dll_1" FileName="SQLSER~1.DLL|SqlServerSpatial140.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll" SelfReg="false" NextFile="UserControlHoaDon.cs"/>
     <ROW File="System.Threading.Tasks.Dataflow.dll" Component_="System.Threading.Tasks.Dataflow.dll" FileName="SYSTEM~1.DLL|System.Threading.Tasks.Dataflow.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\System.Threading.Tasks.Dataflow.dll" SelfReg="false" NextFile="VSLangProj.dll"/>
-    <ROW File="Thesquid.inkFreeFlatSampleOwl.ico" Component_="Thesquid.inkFreeFlatSampleOwl.ico" FileName="THESQU~1.ICO|Thesquid.ink-Free-Flat-Sample-Owl.ico" Attributes="0" SourcePath="..\..\Thesquid.ink-Free-Flat-Sample-Owl.ico" SelfReg="false" NextFile="batchparser.dll"/>
     <ROW File="UserControlHoaDon.Designer.cs" Component_="UserControlHoaDon.cs" FileName="USERCO~2.CS|UserControlHoaDon.Designer.cs" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\UserController\UserControlHoaDon.Designer.cs" SelfReg="false" NextFile="UserControlHoaDon.resx"/>
     <ROW File="UserControlHoaDon.cs" Component_="UserControlHoaDon.cs" FileName="USERCO~1.CS|UserControlHoaDon.cs" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\UserController\UserControlHoaDon.cs" SelfReg="false" NextFile="UserControlHoaDon.Designer.cs"/>
     <ROW File="UserControlHoaDon.resx" Component_="UserControlHoaDon.cs" FileName="USERCO~1.RES|UserControlHoaDon.resx" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\UserController\UserControlHoaDon.resx" SelfReg="false" NextFile="UserControlSanPham.cs"/>
@@ -245,12 +236,13 @@
     <ROW File="UserControlSanPham.resx" Component_="UserControlHoaDon.cs" FileName="USERCO~2.RES|UserControlSanPham.resx" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\UserController\UserControlSanPham.resx" SelfReg="false" NextFile="Microsoft.ReportViewer.Common.resources.dll_8"/>
     <ROW File="VSLangProj.dll" Component_="VSLangProj.dll" FileName="VSLANG~1.DLL|VSLangProj.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj.dll" SelfReg="false" NextFile="VSLangProj2.dll"/>
     <ROW File="VSLangProj2.dll" Component_="VSLangProj2.dll" FileName="VSLANG~2.DLL|VSLangProj2.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj2.dll" SelfReg="false" NextFile="VSLangProj80.dll"/>
-    <ROW File="VSLangProj80.dll" Component_="VSLangProj80.dll" FileName="VSLANG~3.DLL|VSLangProj80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj80.dll" SelfReg="false" NextFile="Thesquid.inkFreeFlatSampleOwl.ico"/>
-    <ROW File="batchparser.dll" Component_="batchparser.dll" FileName="BATCHP~1.DLL|batchparser.dll" Attributes="2" SourcePath="..\..\..\..\..\Desktop\Data\batchparser.dll" SelfReg="false" NextFile="Createdatabase.bat"/>
-    <ROW File="data.sql" Component_="Createdatabase.bat" FileName="data.sql" Attributes="0" SourcePath="..\..\..\..\..\Desktop\Data\data.sql" SelfReg="false" NextFile="SQLCMD.EXE"/>
+    <ROW File="VSLangProj80.dll" Component_="VSLangProj80.dll" FileName="VSLANG~3.DLL|VSLangProj80.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\VSLangProj80.dll" SelfReg="false" NextFile="Microsoft.ReportViewer.Common.resources.dll"/>
     <ROW File="msvcr120.dll" Component_="msvcr120.dll" FileName="msvcr120.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x64\msvcr120.dll" SelfReg="false" NextFile="SqlServerSpatial140.dll"/>
     <ROW File="msvcr120.dll_1" Component_="msvcr120.dll_1" FileName="msvcr120.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\SqlServerTypes\x86\msvcr120.dll" SelfReg="false" NextFile="SqlServerSpatial140.dll_1"/>
     <ROW File="stdole.dll" Component_="stdole.dll" FileName="stdole.dll" Attributes="0" SourcePath="..\RestaurantAK\bin\Release\stdole.dll" SelfReg="false" NextFile="System.Threading.Tasks.Dataflow.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.MsiShortcutPropertyComponent">
+    <ROW MsiShortcutProperty="RestaurantAK.exe1" Shortcut_="RestaurantAK.exe" PropertyKey="[AiPreventAutoPin]" PropVariantValue="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -284,6 +276,12 @@
     <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
     <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
     <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_XmlCommit" Description="Committing XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlCommit" Template="Committing XML file configurations." TemplateLocId="ActionText.Template.AI_XmlCommit"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" DescriptionLocId="ActionText.Description.AI_XmlConfig" Template="Configuring XML file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" DescriptionLocId="ActionText.Description.AI_XmlRemove" Template="Configuring XML file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" Template="Rolling back XML file configurations." TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
     <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
@@ -294,6 +292,7 @@
     <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
     <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
     <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
@@ -319,9 +318,14 @@
     <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="CustomActionData" Target="[~]"/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
     <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
@@ -342,11 +346,19 @@
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SelectAutoPinOption" Type="51" Source="AiPreventAutoPin" Target="System.AppUserModel.StartPinOption"/>
+    <ROW Action="AI_XmlCommit" Type="11777" Source="xmlCfg.dll" Target="OnXmlCommit" WithoutSeq="true"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall" AdditionalSeq="AI_DATA_SETTER_2"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[DesktopFolder]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="RestaurantAK.exe" SourcePath="D:\RestaurantAK\Thesquid.ink-Free-Flat-Sample-Owl.ico" Index="0"/>
     <ROW Name="Thesquid.inkFreeFlatSampleOwl.exe" SourcePath="..\..\Thesquid.ink-Free-Flat-Sample-Owl.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
@@ -369,6 +381,11 @@
     <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
     <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
     <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AI_SelectAutoPinOption" Condition="VersionNT &gt; 601" Sequence="1401"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5102"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3102"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="(REMOVE)" Sequence="3101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -397,11 +414,256 @@
     <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="RestaurantAK.exe" Directory_="SHORTCUTDIR" Name="RESTAU~1.EXE|RestaurantAK.exe" Component_="SHORTCUTDIR" Target="[ProgramFilesFolder]Vu Anh Khoa\Anh Khoa Restaurant\RestaurantAK.exe" Hotkey="0" Icon_="RestaurantAK.exe" IconIndex="0" ShowCmd="3" WkDir="SHORTCUTDIR"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
     <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
     <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlAttributeComponent">
+    <ROW XmlAttribute="connectionString" XmlElement="add_1" Name="connectionString" Flags="14" Order="1" Value="data source=.;Initial Catalog=RestaurantDB;Integrated Security=SSPI"/>
+    <ROW XmlAttribute="cref" XmlElement="see" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardRunKind"/>
+    <ROW XmlAttribute="cref_1" XmlElement="see_1" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException"/>
+    <ROW XmlAttribute="cref_10" XmlElement="see_8" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException"/>
+    <ROW XmlAttribute="cref_11" XmlElement="see_9" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException"/>
+    <ROW XmlAttribute="cref_12" XmlElement="see_10" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.SerializationInfo"/>
+    <ROW XmlAttribute="cref_13" XmlElement="see_11" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.StreamingContext"/>
+    <ROW XmlAttribute="cref_14" XmlElement="exception_2" Name="cref" Flags="14" Order="0" Value="T:System.ArgumentNullException"/>
+    <ROW XmlAttribute="cref_15" XmlElement="exception_3" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.SerializationException"/>
+    <ROW XmlAttribute="cref_16" XmlElement="see_12" Name="cref" Flags="14" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.HResult"/>
+    <ROW XmlAttribute="cref_17" XmlElement="see_13" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException"/>
+    <ROW XmlAttribute="cref_18" XmlElement="see_14" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException"/>
+    <ROW XmlAttribute="cref_2" XmlElement="see_2" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException"/>
+    <ROW XmlAttribute="cref_3" XmlElement="see_3" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.SerializationInfo"/>
+    <ROW XmlAttribute="cref_4" XmlElement="see_4" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.StreamingContext"/>
+    <ROW XmlAttribute="cref_5" XmlElement="exception" Name="cref" Flags="14" Order="0" Value="T:System.ArgumentNullException"/>
+    <ROW XmlAttribute="cref_6" XmlElement="exception_1" Name="cref" Flags="14" Order="0" Value="T:System.Runtime.Serialization.SerializationException"/>
+    <ROW XmlAttribute="cref_7" XmlElement="see_5" Name="cref" Flags="14" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.HResult"/>
+    <ROW XmlAttribute="cref_8" XmlElement="see_6" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException"/>
+    <ROW XmlAttribute="cref_9" XmlElement="see_7" Name="cref" Flags="14" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException"/>
+    <ROW XmlAttribute="culture" XmlElement="assemblyIdentity" Name="culture" Flags="14" Order="2" Value="neutral"/>
+    <ROW XmlAttribute="culture_1" XmlElement="assemblyIdentity_1" Name="culture" Flags="14" Order="2" Value="neutral"/>
+    <ROW XmlAttribute="culture_2" XmlElement="assemblyIdentity_2" Name="culture" Flags="14" Order="2" Value="neutral"/>
+    <ROW XmlAttribute="culture_3" XmlElement="assemblyIdentity_3" Name="culture" Flags="14" Order="2" Value="neutral"/>
+    <ROW XmlAttribute="key" XmlElement="add" Name="key" Flags="15" Order="0" Value="strcon"/>
+    <ROW XmlAttribute="name" XmlElement="member" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.IFilterTokenValues"/>
+    <ROW XmlAttribute="name_1" XmlElement="member_1" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IFilterTokenValues.FilterReplacementTokens(System.String,System.String,System.Collections.Generic.Dictionary[\{]System.String,System.String[\}])"/>
+    <ROW XmlAttribute="name_10" XmlElement="member_5" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.ProjectItemFinishedGenerating(EnvDTE.ProjectItem)"/>
+    <ROW XmlAttribute="name_11" XmlElement="param_5" Name="name" Flags="15" Order="0" Value="projectItem"/>
+    <ROW XmlAttribute="name_12" XmlElement="member_6" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.RunFinished"/>
+    <ROW XmlAttribute="name_13" XmlElement="member_7" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted(System.Object,System.Collections.Generic.Dictionary[\{]System.String,System.String[\}],Microsoft.VisualStudio.TemplateWizard.WizardRunKind,System.Object[\[][\]])"/>
+    <ROW XmlAttribute="name_14" XmlElement="param_6" Name="name" Flags="15" Order="0" Value="automationObject"/>
+    <ROW XmlAttribute="name_15" XmlElement="param_7" Name="name" Flags="15" Order="0" Value="replacementsDictionary"/>
+    <ROW XmlAttribute="name_16" XmlElement="param_8" Name="name" Flags="15" Order="0" Value="runKind"/>
+    <ROW XmlAttribute="name_17" XmlElement="param_9" Name="name" Flags="15" Order="0" Value="customParams"/>
+    <ROW XmlAttribute="name_18" XmlElement="member_8" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.ShouldAddProjectItem(System.String)"/>
+    <ROW XmlAttribute="name_19" XmlElement="param_10" Name="name" Flags="15" Order="0" Value="filePath"/>
+    <ROW XmlAttribute="name_2" XmlElement="param" Name="name" Flags="15" Order="0" Value="projectFileExtension"/>
+    <ROW XmlAttribute="name_20" XmlElement="member_9" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.TemplateWizardDisallowUserTemplatesSecurityAttribute"/>
+    <ROW XmlAttribute="name_21" XmlElement="member_10" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.TemplateWizardDisallowUserTemplatesSecurityAttribute.#ctor(System.Boolean)"/>
+    <ROW XmlAttribute="name_22" XmlElement="param_11" Name="name" Flags="15" Order="0" Value="disallowUserTemplates"/>
+    <ROW XmlAttribute="name_23" XmlElement="member_11" Name="name" Flags="15" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.TemplateWizardDisallowUserTemplatesSecurityAttribute.DisallowUserTemplates"/>
+    <ROW XmlAttribute="name_24" XmlElement="member_12" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.TemplateWizardSecurityAttribute"/>
+    <ROW XmlAttribute="name_25" XmlElement="member_13" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.TemplateWizardSecurityAttribute.#ctor(System.String)"/>
+    <ROW XmlAttribute="name_26" XmlElement="param_12" Name="name" Flags="15" Order="0" Value="callingTemplate"/>
+    <ROW XmlAttribute="name_27" XmlElement="member_14" Name="name" Flags="15" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.TemplateWizardSecurityAttribute.CallingTemplate"/>
+    <ROW XmlAttribute="name_28" XmlElement="member_15" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException"/>
+    <ROW XmlAttribute="name_29" XmlElement="member_16" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.#ctor"/>
+    <ROW XmlAttribute="name_3" XmlElement="param_1" Name="name" Flags="15" Order="0" Value="projectItemFileExtension"/>
+    <ROW XmlAttribute="name_30" XmlElement="member_17" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)"/>
+    <ROW XmlAttribute="name_31" XmlElement="param_13" Name="name" Flags="15" Order="0" Value="info"/>
+    <ROW XmlAttribute="name_32" XmlElement="param_14" Name="name" Flags="15" Order="0" Value="context"/>
+    <ROW XmlAttribute="name_33" XmlElement="paramref" Name="name" Flags="15" Order="0" Value="info"/>
+    <ROW XmlAttribute="name_34" XmlElement="member_18" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.#ctor(System.String)"/>
+    <ROW XmlAttribute="name_35" XmlElement="member_19" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.#ctor(System.String,System.Exception)"/>
+    <ROW XmlAttribute="name_36" XmlElement="member_20" Name="name" Flags="15" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.WizardBackoutException.HResult"/>
+    <ROW XmlAttribute="name_37" XmlElement="member_21" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException"/>
+    <ROW XmlAttribute="name_38" XmlElement="member_22" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.#ctor"/>
+    <ROW XmlAttribute="name_39" XmlElement="member_23" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)"/>
+    <ROW XmlAttribute="name_4" XmlElement="param_2" Name="name" Flags="15" Order="0" Value="replacementValues"/>
+    <ROW XmlAttribute="name_40" XmlElement="param_15" Name="name" Flags="15" Order="0" Value="info"/>
+    <ROW XmlAttribute="name_41" XmlElement="param_16" Name="name" Flags="15" Order="0" Value="context"/>
+    <ROW XmlAttribute="name_42" XmlElement="paramref_1" Name="name" Flags="15" Order="0" Value="info"/>
+    <ROW XmlAttribute="name_43" XmlElement="member_24" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.#ctor(System.String)"/>
+    <ROW XmlAttribute="name_44" XmlElement="member_25" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.#ctor(System.String,System.Exception)"/>
+    <ROW XmlAttribute="name_45" XmlElement="member_26" Name="name" Flags="15" Order="0" Value="P:Microsoft.VisualStudio.TemplateWizard.WizardCancelledException.HResult"/>
+    <ROW XmlAttribute="name_46" XmlElement="member_27" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.WizardRunKind"/>
+    <ROW XmlAttribute="name_47" XmlElement="member_28" Name="name" Flags="15" Order="0" Value="F:Microsoft.VisualStudio.TemplateWizard.WizardRunKind.AsMultiProject"/>
+    <ROW XmlAttribute="name_48" XmlElement="member_29" Name="name" Flags="15" Order="0" Value="F:Microsoft.VisualStudio.TemplateWizard.WizardRunKind.AsNewItem"/>
+    <ROW XmlAttribute="name_49" XmlElement="member_30" Name="name" Flags="15" Order="0" Value="F:Microsoft.VisualStudio.TemplateWizard.WizardRunKind.AsNewProject"/>
+    <ROW XmlAttribute="name_5" XmlElement="member_2" Name="name" Flags="15" Order="0" Value="T:Microsoft.VisualStudio.TemplateWizard.IWizard"/>
+    <ROW XmlAttribute="name_50" XmlElement="add_1" Name="name" Flags="15" Order="0" Value="ConnectionString"/>
+    <ROW XmlAttribute="name_51" XmlElement="assemblyIdentity" Name="name" Flags="15" Order="0" Value="Microsoft.ReportViewer.Common"/>
+    <ROW XmlAttribute="name_52" XmlElement="assemblyIdentity_1" Name="name" Flags="15" Order="0" Value="Microsoft.SqlServer.Types"/>
+    <ROW XmlAttribute="name_53" XmlElement="assemblyIdentity_2" Name="name" Flags="15" Order="0" Value="EnvDTE"/>
+    <ROW XmlAttribute="name_54" XmlElement="assemblyIdentity_3" Name="name" Flags="15" Order="0" Value="Microsoft.Build.Framework"/>
+    <ROW XmlAttribute="name_6" XmlElement="member_3" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.BeforeOpeningFile(EnvDTE.ProjectItem)"/>
+    <ROW XmlAttribute="name_7" XmlElement="param_3" Name="name" Flags="15" Order="0" Value="projectItem"/>
+    <ROW XmlAttribute="name_8" XmlElement="member_4" Name="name" Flags="15" Order="0" Value="M:Microsoft.VisualStudio.TemplateWizard.IWizard.ProjectFinishedGenerating(EnvDTE.Project)"/>
+    <ROW XmlAttribute="name_9" XmlElement="param_4" Name="name" Flags="15" Order="0" Value="project"/>
+    <ROW XmlAttribute="newVersion" XmlElement="bindingRedirect" Name="newVersion" Flags="14" Order="1" Value="15.0.0.0"/>
+    <ROW XmlAttribute="newVersion_1" XmlElement="bindingRedirect_1" Name="newVersion" Flags="14" Order="1" Value="14.0.0.0"/>
+    <ROW XmlAttribute="newVersion_2" XmlElement="bindingRedirect_2" Name="newVersion" Flags="14" Order="1" Value="8.0.0.0"/>
+    <ROW XmlAttribute="newVersion_3" XmlElement="bindingRedirect_3" Name="newVersion" Flags="14" Order="1" Value="14.0.0.0"/>
+    <ROW XmlAttribute="oldVersion" XmlElement="bindingRedirect" Name="oldVersion" Flags="14" Order="0" Value="0.0.0.0-15.0.0.0"/>
+    <ROW XmlAttribute="oldVersion_1" XmlElement="bindingRedirect_1" Name="oldVersion" Flags="14" Order="0" Value="0.0.0.0-14.0.0.0"/>
+    <ROW XmlAttribute="oldVersion_2" XmlElement="bindingRedirect_2" Name="oldVersion" Flags="14" Order="0" Value="0.0.0.0-8.0.0.0"/>
+    <ROW XmlAttribute="oldVersion_3" XmlElement="bindingRedirect_3" Name="oldVersion" Flags="14" Order="0" Value="0.0.0.0-14.0.0.0"/>
+    <ROW XmlAttribute="providerName" XmlElement="add_1" Name="providerName" Flags="14" Order="2" Value="System.Data.SqlClient"/>
+    <ROW XmlAttribute="publicKeyToken" XmlElement="assemblyIdentity" Name="publicKeyToken" Flags="14" Order="1" Value="89845dcd8080cc91"/>
+    <ROW XmlAttribute="publicKeyToken_1" XmlElement="assemblyIdentity_1" Name="publicKeyToken" Flags="14" Order="1" Value="89845dcd8080cc91"/>
+    <ROW XmlAttribute="publicKeyToken_2" XmlElement="assemblyIdentity_2" Name="publicKeyToken" Flags="14" Order="1" Value="b03f5f7f11d50a3a"/>
+    <ROW XmlAttribute="publicKeyToken_3" XmlElement="assemblyIdentity_3" Name="publicKeyToken" Flags="14" Order="1" Value="b03f5f7f11d50a3a"/>
+    <ROW XmlAttribute="sku" XmlElement="supportedRuntime" Name="sku" Flags="14" Order="1" Value=".NETFramework,Version=v4.6.1"/>
+    <ROW XmlAttribute="value" XmlElement="add" Name="value" Flags="14" Order="1" Value="Data Source=123.23.99.97,1433;Network Library=DBMSSOCN; Initial Catalog=RestaurantDB;User ID=sa;Password=123;"/>
+    <ROW XmlAttribute="version" XmlElement="supportedRuntime" Name="version" Flags="14" Order="0" Value="v4.0"/>
+    <ROW XmlAttribute="xmlns" XmlElement="assemblyBinding" Name="xmlns" Flags="14" Order="0" Value="urn:schemas-microsoft-com:asm.v1"/>
+    <ROW XmlAttribute="xmlns_1" XmlElement="assemblyBinding_1" Name="xmlns" Flags="14" Order="0" Value="urn:schemas-microsoft-com:asm.v1"/>
+    <ROW XmlAttribute="xmlns_2" XmlElement="assemblyBinding_2" Name="xmlns" Flags="14" Order="0" Value="urn:schemas-microsoft-com:asm.v1"/>
+    <ROW XmlAttribute="xmlns_3" XmlElement="assemblyBinding_3" Name="xmlns" Flags="14" Order="0" Value="urn:schemas-microsoft-com:asm.v1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="Comment" ParentElement="appSettings" Name="Comment" Condition="1" Order="0" Flags="1" Text="&lt;add key=&quot;strcon&quot; value=&quot;Data Source=.;Initial Catalog=RestaurantDB;User ID=sa;Password=123&quot; /&gt;"/>
+    <ROW XmlElement="add" ParentElement="appSettings" Name="add" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="add_1" ParentElement="connectionStrings" Name="add" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="appSettings" ParentElement="configuration" Name="appSettings" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="assembly" ParentElement="doc" Name="assembly" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="assemblyBinding" ParentElement="runtime" Name="assemblyBinding" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="assemblyBinding_1" ParentElement="runtime" Name="assemblyBinding" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="assemblyBinding_2" ParentElement="runtime" Name="assemblyBinding" Condition="1" Order="2" Flags="14"/>
+    <ROW XmlElement="assemblyBinding_3" ParentElement="runtime" Name="assemblyBinding" Condition="1" Order="3" Flags="14"/>
+    <ROW XmlElement="assemblyIdentity" ParentElement="dependentAssembly" Name="assemblyIdentity" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="assemblyIdentity_1" ParentElement="dependentAssembly_1" Name="assemblyIdentity" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="assemblyIdentity_2" ParentElement="dependentAssembly_2" Name="assemblyIdentity" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="assemblyIdentity_3" ParentElement="dependentAssembly_3" Name="assemblyIdentity" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="bindingRedirect" ParentElement="dependentAssembly" Name="bindingRedirect" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="bindingRedirect_1" ParentElement="dependentAssembly_1" Name="bindingRedirect" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="bindingRedirect_2" ParentElement="dependentAssembly_2" Name="bindingRedirect" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="bindingRedirect_3" ParentElement="dependentAssembly_3" Name="bindingRedirect" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="configuration" Name="configuration" Condition="1" Order="0" Flags="30"/>
+    <ROW XmlElement="connectionStrings" ParentElement="configuration" Name="connectionStrings" Condition="1" Order="2" Flags="14"/>
+    <ROW XmlElement="dependentAssembly" ParentElement="assemblyBinding" Name="dependentAssembly" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="dependentAssembly_1" ParentElement="assemblyBinding_1" Name="dependentAssembly" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="dependentAssembly_2" ParentElement="assemblyBinding_2" Name="dependentAssembly" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="dependentAssembly_3" ParentElement="assemblyBinding_3" Name="dependentAssembly" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="doc" Name="doc" Condition="1" Order="0" Flags="30"/>
+    <ROW XmlElement="exception" ParentElement="member_17" Name="exception" Condition="1" Order="3" Flags="14" Text="The  parameter is a null reference (Nothing in Visual Basic)"/>
+    <ROW XmlElement="exception_1" ParentElement="member_17" Name="exception" Condition="1" Order="4" Flags="14" Text="The class name is a null reference (Nothing in Visual Basic) or  is zero (0)."/>
+    <ROW XmlElement="exception_2" ParentElement="member_23" Name="exception" Condition="1" Order="3" Flags="14" Text="The  parameter is a null reference (Nothing in Visual Basic)"/>
+    <ROW XmlElement="exception_3" ParentElement="member_23" Name="exception" Condition="1" Order="4" Flags="14" Text="The class name is a null reference (Nothing in Visual Basic) or  is zero (0)."/>
+    <ROW XmlElement="member" ParentElement="members" Name="member" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="member_1" ParentElement="members" Name="member" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="member_10" ParentElement="members" Name="member" Condition="1" Order="10" Flags="14"/>
+    <ROW XmlElement="member_11" ParentElement="members" Name="member" Condition="1" Order="11" Flags="14"/>
+    <ROW XmlElement="member_12" ParentElement="members" Name="member" Condition="1" Order="12" Flags="14"/>
+    <ROW XmlElement="member_13" ParentElement="members" Name="member" Condition="1" Order="13" Flags="14"/>
+    <ROW XmlElement="member_14" ParentElement="members" Name="member" Condition="1" Order="14" Flags="14"/>
+    <ROW XmlElement="member_15" ParentElement="members" Name="member" Condition="1" Order="15" Flags="14"/>
+    <ROW XmlElement="member_16" ParentElement="members" Name="member" Condition="1" Order="16" Flags="14"/>
+    <ROW XmlElement="member_17" ParentElement="members" Name="member" Condition="1" Order="17" Flags="14"/>
+    <ROW XmlElement="member_18" ParentElement="members" Name="member" Condition="1" Order="18" Flags="14"/>
+    <ROW XmlElement="member_19" ParentElement="members" Name="member" Condition="1" Order="19" Flags="14"/>
+    <ROW XmlElement="member_2" ParentElement="members" Name="member" Condition="1" Order="2" Flags="14"/>
+    <ROW XmlElement="member_20" ParentElement="members" Name="member" Condition="1" Order="20" Flags="14"/>
+    <ROW XmlElement="member_21" ParentElement="members" Name="member" Condition="1" Order="21" Flags="14"/>
+    <ROW XmlElement="member_22" ParentElement="members" Name="member" Condition="1" Order="22" Flags="14"/>
+    <ROW XmlElement="member_23" ParentElement="members" Name="member" Condition="1" Order="23" Flags="14"/>
+    <ROW XmlElement="member_24" ParentElement="members" Name="member" Condition="1" Order="24" Flags="14"/>
+    <ROW XmlElement="member_25" ParentElement="members" Name="member" Condition="1" Order="25" Flags="14"/>
+    <ROW XmlElement="member_26" ParentElement="members" Name="member" Condition="1" Order="26" Flags="14"/>
+    <ROW XmlElement="member_27" ParentElement="members" Name="member" Condition="1" Order="27" Flags="14"/>
+    <ROW XmlElement="member_28" ParentElement="members" Name="member" Condition="1" Order="28" Flags="14"/>
+    <ROW XmlElement="member_29" ParentElement="members" Name="member" Condition="1" Order="29" Flags="14"/>
+    <ROW XmlElement="member_3" ParentElement="members" Name="member" Condition="1" Order="3" Flags="14"/>
+    <ROW XmlElement="member_30" ParentElement="members" Name="member" Condition="1" Order="30" Flags="14"/>
+    <ROW XmlElement="member_4" ParentElement="members" Name="member" Condition="1" Order="4" Flags="14"/>
+    <ROW XmlElement="member_5" ParentElement="members" Name="member" Condition="1" Order="5" Flags="14"/>
+    <ROW XmlElement="member_6" ParentElement="members" Name="member" Condition="1" Order="6" Flags="14"/>
+    <ROW XmlElement="member_7" ParentElement="members" Name="member" Condition="1" Order="7" Flags="14"/>
+    <ROW XmlElement="member_8" ParentElement="members" Name="member" Condition="1" Order="8" Flags="14"/>
+    <ROW XmlElement="member_9" ParentElement="members" Name="member" Condition="1" Order="9" Flags="14"/>
+    <ROW XmlElement="members" ParentElement="doc" Name="members" Condition="1" Order="1" Flags="14"/>
+    <ROW XmlElement="name" ParentElement="assembly" Name="name" Condition="1" Order="0" Flags="14" Text="Microsoft.VisualStudio.TemplateWizardInterface"/>
+    <ROW XmlElement="param" ParentElement="member_1" Name="param" Condition="1" Order="1" Flags="14" Text="The file name extenstion of the project file."/>
+    <ROW XmlElement="param_1" ParentElement="member_1" Name="param" Condition="1" Order="2" Flags="14" Text="The file name extension of the item."/>
+    <ROW XmlElement="param_10" ParentElement="member_8" Name="param" Condition="1" Order="2" Flags="14" Text="The path to the project item."/>
+    <ROW XmlElement="param_11" ParentElement="member_10" Name="param" Condition="1" Order="1" Flags="14" Text="true to specify that the template wizard extension will only load templates located in the Visual Studio installation directory or one of its subdirectories; otherwise, false. The default is false."/>
+    <ROW XmlElement="param_12" ParentElement="member_13" Name="param" Condition="1" Order="1" Flags="14" Text="The name of the template allowed to call the template wizard extension. For example, MyTemplate.vstemplate."/>
+    <ROW XmlElement="param_13" ParentElement="member_17" Name="param" Condition="1" Order="1" Flags="14" Text="The  that holds the serialized object data about the exception being thrown."/>
+    <ROW XmlElement="param_14" ParentElement="member_17" Name="param" Condition="1" Order="2" Flags="14" Text="The  that contains contextual information about the source or destination."/>
+    <ROW XmlElement="param_15" ParentElement="member_23" Name="param" Condition="1" Order="1" Flags="14" Text="The  that holds the serialized object data about the exception being thrown."/>
+    <ROW XmlElement="param_16" ParentElement="member_23" Name="param" Condition="1" Order="2" Flags="14" Text="The  that contains contextual information about the source or destination."/>
+    <ROW XmlElement="param_2" ParentElement="member_1" Name="param" Condition="1" Order="3" Flags="14" Text="The keys and values to use during parameter replacement."/>
+    <ROW XmlElement="param_3" ParentElement="member_3" Name="param" Condition="1" Order="1" Flags="14" Text="The project item that will be opened."/>
+    <ROW XmlElement="param_4" ParentElement="member_4" Name="param" Condition="1" Order="1" Flags="14" Text="The project that finished generating."/>
+    <ROW XmlElement="param_5" ParentElement="member_5" Name="param" Condition="1" Order="1" Flags="14" Text="The project item that finished generating."/>
+    <ROW XmlElement="param_6" ParentElement="member_7" Name="param" Condition="1" Order="1" Flags="14" Text="The automation object being used by the template wizard."/>
+    <ROW XmlElement="param_7" ParentElement="member_7" Name="param" Condition="1" Order="2" Flags="14" Text="The list of standard parameters to be replaced."/>
+    <ROW XmlElement="param_8" ParentElement="member_7" Name="param" Condition="1" Order="3" Flags="14" Text="A  indicating the type of wizard run."/>
+    <ROW XmlElement="param_9" ParentElement="member_7" Name="param" Condition="1" Order="4" Flags="14" Text="The custom parameters with which to perform parameter replacement in the project."/>
+    <ROW XmlElement="paramref" ParentElement="exception" Name="paramref" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="paramref_1" ParentElement="exception_2" Name="paramref" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="returns" ParentElement="member_8" Name="returns" Condition="1" Order="1" Flags="14" Text="true if the project item should be added to the project; otherwise, false."/>
+    <ROW XmlElement="returns_1" ParentElement="member_11" Name="returns" Condition="1" Order="1" Flags="14" Text="true to disallow user templates; otherwise, false."/>
+    <ROW XmlElement="returns_2" ParentElement="member_14" Name="returns" Condition="1" Order="1" Flags="14" Text="The name of the template allowed to call the template wizard extension."/>
+    <ROW XmlElement="returns_3" ParentElement="member_20" Name="returns" Condition="1" Order="1" Flags="14" Text="The HRESULT value."/>
+    <ROW XmlElement="returns_4" ParentElement="member_26" Name="returns" Condition="1" Order="1" Flags="14" Text="The HRESULT value."/>
+    <ROW XmlElement="runtime" ParentElement="configuration" Name="runtime" Condition="1" Order="3" Flags="14"/>
+    <ROW XmlElement="see" ParentElement="param_8" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_1" ParentElement="summary_16" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_10" ParentElement="param_15" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_11" ParentElement="param_16" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_12" ParentElement="exception_3" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_13" ParentElement="summary_24" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_14" ParentElement="summary_25" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_2" ParentElement="summary_17" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_3" ParentElement="param_13" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_4" ParentElement="param_14" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_5" ParentElement="exception_1" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_6" ParentElement="summary_18" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_7" ParentElement="summary_19" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_8" ParentElement="summary_22" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="see_9" ParentElement="summary_23" Name="see" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="startup" ParentElement="configuration" Name="startup" Condition="1" Order="0" Flags="14"/>
+    <ROW XmlElement="summary" ParentElement="member" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies the filtering logic to run when a project or item is instantiated from a template."/>
+    <ROW XmlElement="summary_1" ParentElement="member_1" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies the filtering logic to run when a project or item is instantiated from a template."/>
+    <ROW XmlElement="summary_10" ParentElement="member_10" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies that the template wizard extension will only load templates located in the Visual Studio installation directory or one of its subdirectories."/>
+    <ROW XmlElement="summary_11" ParentElement="member_11" Name="summary" Condition="1" Order="0" Flags="14" Text="Gets a value that indicates whether to disallow user templates."/>
+    <ROW XmlElement="summary_12" ParentElement="member_12" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies that the template wizard extension will only run when called by the specified template."/>
+    <ROW XmlElement="summary_13" ParentElement="member_13" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies that the template wizard extension will only run when called by the specified template."/>
+    <ROW XmlElement="summary_14" ParentElement="member_14" Name="summary" Condition="1" Order="0" Flags="14" Text="Gets the name of the template allowed to call the template wizard extension."/>
+    <ROW XmlElement="summary_15" ParentElement="member_15" Name="summary" Condition="1" Order="0" Flags="14" Text="The exception that is thrown when the template wizard is backed out before it has completed."/>
+    <ROW XmlElement="summary_16" ParentElement="member_16" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the ."/>
+    <ROW XmlElement="summary_17" ParentElement="member_17" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with serialized data."/>
+    <ROW XmlElement="summary_18" ParentElement="member_18" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with the specified error message."/>
+    <ROW XmlElement="summary_19" ParentElement="member_19" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with the specified error message and a reference to the inner exception that is the cause of this exception."/>
+    <ROW XmlElement="summary_2" ParentElement="member_2" Name="summary" Condition="1" Order="0" Flags="14" Text="Defines the logic for a template wizard extension."/>
+    <ROW XmlElement="summary_20" ParentElement="member_20" Name="summary" Condition="1" Order="0" Flags="14" Text="Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception."/>
+    <ROW XmlElement="summary_21" ParentElement="member_21" Name="summary" Condition="1" Order="0" Flags="14" Text="The exception that is thrown when the template wizard is cancelled before it has completed."/>
+    <ROW XmlElement="summary_22" ParentElement="member_22" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class."/>
+    <ROW XmlElement="summary_23" ParentElement="member_23" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with serialized data."/>
+    <ROW XmlElement="summary_24" ParentElement="member_24" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with the specified error message."/>
+    <ROW XmlElement="summary_25" ParentElement="member_25" Name="summary" Condition="1" Order="0" Flags="14" Text="Initializes a new instance of the  class with the specified error message and a reference to the inner exception that is the cause of this exception."/>
+    <ROW XmlElement="summary_26" ParentElement="member_26" Name="summary" Condition="1" Order="0" Flags="14" Text="Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception."/>
+    <ROW XmlElement="summary_27" ParentElement="member_27" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies constants that define the different templates the template wizard can create."/>
+    <ROW XmlElement="summary_28" ParentElement="member_28" Name="summary" Condition="1" Order="0" Flags="14" Text="A new multi-project template."/>
+    <ROW XmlElement="summary_29" ParentElement="member_29" Name="summary" Condition="1" Order="0" Flags="14" Text="A new item template."/>
+    <ROW XmlElement="summary_3" ParentElement="member_3" Name="summary" Condition="1" Order="0" Flags="14" Text="Runs custom wizard logic before opening an item in the template."/>
+    <ROW XmlElement="summary_30" ParentElement="member_30" Name="summary" Condition="1" Order="0" Flags="14" Text="A new project template."/>
+    <ROW XmlElement="summary_4" ParentElement="member_4" Name="summary" Condition="1" Order="0" Flags="14" Text="Runs custom wizard logic when a project has finished generating."/>
+    <ROW XmlElement="summary_5" ParentElement="member_5" Name="summary" Condition="1" Order="0" Flags="14" Text="Runs custom wizard logic when a project item has finished generating."/>
+    <ROW XmlElement="summary_6" ParentElement="member_6" Name="summary" Condition="1" Order="0" Flags="14" Text="Runs custom wizard logic when the wizard has completed all tasks."/>
+    <ROW XmlElement="summary_7" ParentElement="member_7" Name="summary" Condition="1" Order="0" Flags="14" Text="Runs custom wizard logic at the beginning of a template wizard run."/>
+    <ROW XmlElement="summary_8" ParentElement="member_8" Name="summary" Condition="1" Order="0" Flags="14" Text="Indicates whether the specified project item should be added to the project."/>
+    <ROW XmlElement="summary_9" ParentElement="member_9" Name="summary" Condition="1" Order="0" Flags="14" Text="Specifies that the template wizard extension will only load templates located in the Visual Studio installation directory or one of its subdirectories."/>
+    <ROW XmlElement="supportedRuntime" ParentElement="startup" Name="supportedRuntime" Condition="1" Order="0" Flags="14"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="Microsoft.VisualStudio.TemplateWiza" FileName="MICROS~1.XML|Microsoft.VisualStudio.TemplateWizardInterface.xml" DirProperty="APPDIR" Component="AI_ExePath" RootElement="doc" Flags="89" Version="1.0" Encoding="utf-8" IndentUnits="2"/>
+    <ROW XmlFile="RestaurantAK.exe.config" FileName="RESTAU~1.CON|RestaurantAK.exe.config" DirProperty="APPDIR" Component="AI_ExePath" RootElement="configuration" Flags="89" Version="1.0" Encoding="utf-8" IndentUnits="2"/>
   </COMPONENT>
 </DOCUMENT>
