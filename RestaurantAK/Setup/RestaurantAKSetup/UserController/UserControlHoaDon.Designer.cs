@@ -69,9 +69,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 15);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 25);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(398, 280);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(398, 270);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // lvItem

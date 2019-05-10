@@ -14,6 +14,7 @@ namespace RestaurantAK.UserController
 {
     public partial class UserControlSanPham : UserControl
     {
+        int ItemId = -1;
         public UserControlSanPham()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace RestaurantAK.UserController
             {
 
             }
-           
+
         }
         #region Method
         public void LoadDATA()
@@ -43,6 +44,7 @@ namespace RestaurantAK.UserController
             //    lvItem.Items.Add(lsvItem);
             //}
             dtgvItem.DataSource = ItemDAO.Ins.LoadItems();
+            dtgvItem.MouseClick += new MouseEventHandler(dtgvItem_MouseClick);
         }
         #endregion
 
@@ -71,6 +73,46 @@ namespace RestaurantAK.UserController
 
                     throw;
                 }
+            }
+        }
+
+        private void dtgvItem_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                //MessageBox.Show("Left");
+            }
+            else
+            {
+                ContextMenuStrip menuStrip = new ContextMenuStrip();
+                int positon = dtgvItem.HitTest(e.X, e.Y).RowIndex;
+                ItemId = int.Parse(dtgvItem.Rows[positon].Cells[0].Value.ToString());
+                //MessageBox.Show("Right");
+                //MessageBox.Show(ItemId.ToString());
+                if (positon >= 0)
+                {
+                    menuStrip.Items.Add("Xóa").Name = "Xóa";
+                }
+                menuStrip.Show(dtgvItem, new Point(e.X, e.Y));
+                menuStrip.ItemClicked += new ToolStripItemClickedEventHandler(menuStrip_ItemClicked);
+            }
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            //MessageBox.Show(e.ClickedItem.Name.ToString());
+            switch (e.ClickedItem.Name.ToString())
+            {
+                case "Xóa":
+                    if (ItemDAO.Ins.DeleteItem(ItemId))
+                    {
+                        MessageBox.Show("Thành công");
+                        ItemId = -1;
+                        LoadDATA();
+                    }
+                    break;
+                default:
+                    break;
             }
         }
     }

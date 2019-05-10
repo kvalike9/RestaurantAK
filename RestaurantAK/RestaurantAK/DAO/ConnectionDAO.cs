@@ -27,7 +27,17 @@ namespace RestaurantAK.DAO
 
             using (SqlConnection connection = new SqlConnection(Manager.AppSettings.Get("strcon")))
             {
-                connection.Open();
+                //try
+                //{
+                    connection.Open();
+                //}
+                //catch
+                //{
+                //    Console.WriteLine("Chuyển kết nối");
+                //    connection.ConnectionString = Manager.AppSettings.Get("strcon2");
+                //    connection.Open();
+                //}
+                
 
                 SqlCommand command = new SqlCommand(query, connection);
 
@@ -62,7 +72,6 @@ namespace RestaurantAK.DAO
             using (SqlConnection connection = new SqlConnection(Manager.AppSettings.Get("strcon")))
             {
                 connection.Open();
-
                 SqlCommand command = new SqlCommand(query, connection);
 
                 if (parameter != null)

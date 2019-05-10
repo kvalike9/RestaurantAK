@@ -339,7 +339,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Price.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>#,0;(#,0)</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -401,7 +403,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Total.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>#,0;(#,0)</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -477,7 +481,9 @@
                   </TextRun>
                   <TextRun>
                     <Value>=Sum(Fields!Tong.Value, "ReportItem")</Value>
-                    <Style />
+                    <Style>
+                      <Format>#,0;(#,0)</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -518,7 +524,9 @@
                   </TextRun>
                   <TextRun>
                     <Value>=Sum(Fields!Total.Value, "ReportItem")</Value>
-                    <Style />
+                    <Style>
+                      <Format>#,0;(#,0)</Format>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />

@@ -34,10 +34,10 @@ namespace RestaurantAK.UserController
         {
             dtgvOrder.DataSource = OrderItemDAO.Ins.LoadHoaDon();
         }
-        void LoadTable()
+        public void LoadTable()
         {
             flowLayoutPanel1.Controls.Clear();
-            List<Items> tableList = ItemDAO.Ins.LoadItems();
+            List<Items> tableList = ItemDAO.Ins.ShowItemStatus(1);
 
             foreach (Items item in tableList)
             {
@@ -127,6 +127,7 @@ namespace RestaurantAK.UserController
         private void btnCretaeHDNew_Click(object sender, EventArgs e)
         {
             lvItem.Items.Clear();
+            LoadTable();
             LoadHoaDon();
             if (OrderItemDAO.Ins.CreateHDNew(1))
             {
@@ -214,6 +215,7 @@ namespace RestaurantAK.UserController
                 txbHDNew.text = "";
                 txbTongTien.Text = "0";
                 orderid = -1;
+                LoadTable();
             }
             
         }
@@ -254,6 +256,11 @@ namespace RestaurantAK.UserController
             }
             e.Graphics.DrawString("Tổng tiền: " + txbTongTien.Text.ToString(), this.Font, Brushes.Black, 720, y+20);
 
+        }
+
+        private void btnLoadMenu_Click(object sender, EventArgs e)
+        {
+            LoadTable();
         }
     }
 }

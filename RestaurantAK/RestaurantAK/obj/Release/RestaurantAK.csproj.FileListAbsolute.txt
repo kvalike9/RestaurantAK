@@ -219,3 +219,4 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\R
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csproj.CopyComplete
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.exe
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.pdb
+C:\Users\anhkh\source\repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csprojAssemblyReference.cache

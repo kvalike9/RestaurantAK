@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Manager = System.Configuration.ConfigurationManager;
 using System.Data.SqlClient;
 using Microsoft.Reporting.WinForms;
+using RestaurantAK.DAO;
 
 namespace RestaurantAK.UserController
 {
@@ -38,12 +39,14 @@ namespace RestaurantAK.UserController
                 cmd.Parameters.AddWithValue("@DateStart", dtpkStart.Value);
                 cmd.Parameters.AddWithValue("@DateEnd", dtpkEnd.Value);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataSet tb = new DataSet();
+                DataTable tb = new DataTable();
                 adapter.Fill(tb);
                 conn.Close();
+
+                //DataTable tb = ReportDAO.Ins.ReportItems(dtpkStart.Value, dtpkEnd.Value);
                 reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
                 reportViewer1.LocalReport.ReportPath = "ReportItem.rdlc";
-                if (tb.Tables[0].Rows.Count > 0)
+                if (tb.Rows.Count > 0)
                 {
                     //Tạo nguồn dữ liệu cho báo cáo
                     ReportDataSource rds = new ReportDataSource();
@@ -51,14 +54,13 @@ namespace RestaurantAK.UserController
                     ReportParameter DayEnd = new ReportParameter("DayEnd", dtpkEnd.Value.ToString("dd/MM/yyyy"));
                     
                     rds.Name = "ReportItem";
-                    rds.Value = tb.Tables[0];
+                    rds.Value = tb;
                     //Xóa dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
                     reportViewer1.LocalReport.SetParameters(DayStart);
                     reportViewer1.LocalReport.SetParameters(DayEnd);
                     reportViewer1.LocalReport.DataSources.Clear();
                     //Add dữ liệu vào báo cáo
                     reportViewer1.LocalReport.DataSources.Add(rds);
-
                     reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
                     reportViewer1.ZoomMode = ZoomMode.Percent;
                     //Refresh lại báo cáo

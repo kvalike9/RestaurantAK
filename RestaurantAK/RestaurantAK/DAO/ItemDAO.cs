@@ -36,5 +36,21 @@ namespace RestaurantAK.DAO
             int re = ConnectionDAO.Ins.ExecuteNonQuery("sp_AddItem @OrderID , @ItemID", new object[] { Name, Price });
             return re > 0;
         }
+        public bool DeleteItem(int ItemID, int Status)
+        {
+            int re = ConnectionDAO.Ins.ExecuteNonQuery("sp_DeleteUpdteItem @ItemID , @Status", new object[] { ItemID, Status });
+            return re > 0;
+        }
+        public List<Items> ShowItemStatus(int Status)
+        {
+            List<Items> itemslist = new List<Items>();
+            DataTable data = ConnectionDAO.Ins.ExecuteQuery("sp_ShowItemStatus @Status", new object[] { Status });
+            foreach (DataRow item in data.Rows)
+            {
+                Items items = new Items(item);
+                itemslist.Add(items);
+            }
+            return itemslist;
+        }
     }
 }
