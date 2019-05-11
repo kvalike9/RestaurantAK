@@ -16,8 +16,8 @@ namespace RestaurantAK.DAO
 
         public static ReportDAO Ins
         {
-            get { if (_Ins == null) _Ins = new ReportDAO(); return ReportDAO.Ins; }
-            private set { ReportDAO._Ins = value; }
+            get { if (_Ins == null) _Ins = new ReportDAO(); return ReportDAO._Ins; }
+            private set { ReportDAO.Ins = value; }
         }
         private ReportDAO() { }
         public DataTable ReportItems(DateTime dateTimeStart, DateTime dateTimeEnd)

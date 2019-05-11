@@ -80,11 +80,13 @@
     <Compile Include="DAO\ItemDAO.cs" />
     <Compile Include="DAO\OrderItemDAO.cs" />
     <Compile Include="DAO\ReportDAO.cs" />
+    <Compile Include="DAO\TypeItemDAO.cs" />
     <Compile Include="DTO\Items.cs" />
     <Compile Include="DTO\Order.cs" />
     <Compile Include="DTO\OrderHoaDon.cs" />
     <Compile Include="DTO\OrderItem.cs" />
     <Compile Include="DTO\ReportItem.cs" />
+    <Compile Include="DTO\TypeItem.cs" />
     <Compile Include="fMain.cs">
       <SubType>Form</SubType>
     </Compile>

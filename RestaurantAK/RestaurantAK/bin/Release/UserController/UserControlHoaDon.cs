@@ -28,11 +28,24 @@ namespace RestaurantAK.UserController
             catch
             {
             }
+            LoadcbTypeItem();
         }
         #region Method
         void LoadHoaDon()
         {
             dtgvOrder.DataSource = OrderItemDAO.Ins.LoadHoaDon();
+        }
+        void LoadcbTypeItem()
+        {
+            try
+            {
+                cbTypeItem.DataSource = TypeItemDAO.Ins.LoadItemComboboxAll();
+                cbTypeItem.DisplayMember = "NameType";
+                cbTypeItem.ValueMember = "TypeItemID";
+            }
+            catch
+            {
+            }
         }
         public void LoadTable()
         {
@@ -127,7 +140,7 @@ namespace RestaurantAK.UserController
         private void btnCretaeHDNew_Click(object sender, EventArgs e)
         {
             lvItem.Items.Clear();
-            LoadTable();
+            //LoadTable();
             LoadHoaDon();
             if (OrderItemDAO.Ins.CreateHDNew(1))
             {
@@ -215,7 +228,7 @@ namespace RestaurantAK.UserController
                 txbHDNew.text = "";
                 txbTongTien.Text = "0";
                 orderid = -1;
-                LoadTable();
+                //LoadTable();
             }
             
         }
@@ -261,6 +274,52 @@ namespace RestaurantAK.UserController
         private void btnLoadMenu_Click(object sender, EventArgs e)
         {
             LoadTable();
+        }
+
+        private void cbTypeItem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if((int)cbTypeItem.SelectedValue == 0)
+            {
+                LoadTable();
+            }
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                List<Items> tableList = ItemDAO.Ins.ShowItemStatusType(1, (int)cbTypeItem.SelectedValue);
+
+                foreach (Items item in tableList)
+                {
+                    BunifuFlatButton btn = new BunifuFlatButton() { Width = 200, Height = 100 };
+                    btn.Text = item.Name + Environment.NewLine + item.Price;
+                    btn.Click += btn_Click;
+                    btn.Tag = item;
+                    flowLayoutPanel1.Controls.Add(btn);
+                }
+            }
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            txbTimKiem.text = "";
+        }
+
+        private void btnTimKiem_OnTextChange(object sender, EventArgs e)
+        {
+            try
+            {
+                flowLayoutPanel1.Controls.Clear();
+                List<Items> tableList = ItemDAO.Ins.ShowItemSearch((int)cbTypeItem.SelectedValue, txbTimKiem.text);
+                foreach (Items item in tableList)
+                {
+                    BunifuFlatButton btn = new BunifuFlatButton() { Width = 200, Height = 100 };
+                    btn.Text = item.Name + Environment.NewLine + item.Price;
+                    btn.Click += btn_Click;
+                    btn.Tag = item;
+                    flowLayoutPanel1.Controls.Add(btn);
+                }
+            }
+            catch
+            {
+            }
         }
     }
 }

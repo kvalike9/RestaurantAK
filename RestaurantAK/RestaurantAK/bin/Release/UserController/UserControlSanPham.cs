@@ -26,6 +26,8 @@ namespace RestaurantAK.UserController
             {
 
             }
+            LoadItemKD();
+            LoadCBTypeItem();
         }
         #region Method
         public void LoadDATA()
@@ -44,6 +46,19 @@ namespace RestaurantAK.UserController
             //}
             dtgvItem.DataSource = ItemDAO.Ins.LoadItems();
             dtgvItem.MouseClick += new MouseEventHandler(dtgvItem_MouseClick);
+            
+        }
+        public void LoadCBTypeItem()
+        {
+            try
+            {
+                cbTypeItem.DataSource = TypeItemDAO.Ins.LoadItemCombobox();
+                cbTypeItem.DisplayMember = "NameType";
+                cbTypeItem.ValueMember = "TypeItemID";
+            }
+            catch
+            {
+            }
         }
         public void LoadItemKD()
         {
@@ -83,9 +98,14 @@ namespace RestaurantAK.UserController
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (ItemDAO.Ins.AddItem(txbName.Text, double.Parse(nbPrice.Value.ToString())))
+            int idtypeitem = (int)cbTypeItem.SelectedValue;
+            if (ItemDAO.Ins.AddItem(txbName.Text, double.Parse(nbPrice.Value.ToString()), idtypeitem))
             {
                 LoadItemKD();
+            }
+            else
+            {
+                MessageBox.Show("Sản phẩm đã tồn tại");
             }
         }
 
