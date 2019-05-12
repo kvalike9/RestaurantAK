@@ -42,6 +42,8 @@ namespace RestaurantAK.UserController
                 cbTypeItem.DataSource = TypeItemDAO.Ins.LoadItemComboboxAll();
                 cbTypeItem.DisplayMember = "NameType";
                 cbTypeItem.ValueMember = "TypeItemID";
+                //cbTypeItem.SelectedIndex = 0;
+                cbTypeItem.SelectionStart = 0;
             }
             catch
             {
@@ -276,27 +278,6 @@ namespace RestaurantAK.UserController
             LoadTable();
         }
 
-        private void cbTypeItem_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if((int)cbTypeItem.SelectedValue == 0)
-            {
-                LoadTable();
-            }
-            else
-            {
-                flowLayoutPanel1.Controls.Clear();
-                List<Items> tableList = ItemDAO.Ins.ShowItemStatusType(1, (int)cbTypeItem.SelectedValue);
-
-                foreach (Items item in tableList)
-                {
-                    BunifuFlatButton btn = new BunifuFlatButton() { Width = 200, Height = 100 };
-                    btn.Text = item.Name + Environment.NewLine + item.Price;
-                    btn.Click += btn_Click;
-                    btn.Tag = item;
-                    flowLayoutPanel1.Controls.Add(btn);
-                }
-            }
-        }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             txbTimKiem.text = "";
@@ -319,6 +300,48 @@ namespace RestaurantAK.UserController
             }
             catch
             {
+            }
+        }
+
+        private void cbTypeItem_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show(cbTypeItem.SelectedValue.ToString());
+            if (cbTypeItem.SelectedValue.ToString() == "RestaurantAK.DTO.TypeItem")
+            {
+
+            }
+            else if (cbTypeItem.SelectedValue.ToString() == "0")
+            {
+                try
+                {
+                    LoadTable();
+                }
+                catch
+                {
+                }
+            }
+            else /*if (cbTypeItem.SelectedValue.ToString() == "1" || cbTypeItem.SelectedValue.ToString() == "2")*/
+            {
+                flowLayoutPanel1.Controls.Clear();
+                int itemtypeid;
+                try
+                {
+                    itemtypeid = (int)cbTypeItem.SelectedValue;
+                    List<Items> tableList = ItemDAO.Ins.ShowItemStatusType(1, itemtypeid);
+
+                    foreach (Items item in tableList)
+                    {
+                        BunifuFlatButton btn = new BunifuFlatButton() { Width = 200, Height = 100 };
+                        btn.Text = item.Name + Environment.NewLine + item.Price;
+                        btn.Click += btn_Click;
+                        btn.Tag = item;
+                        flowLayoutPanel1.Controls.Add(btn);
+                    }
+                }
+                catch
+                {
+                }
+
             }
         }
     }

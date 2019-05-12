@@ -219,4 +219,15 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\R
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csproj.CopyComplete
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.exe
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.pdb
-C:\Users\anhkh\source\repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csprojAssemblyReference.cache
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Designer.Interfaces.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Designer.Interfaces.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.WCFReference.Interop.xml
