@@ -219,7 +219,6 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\Res
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\RestaurantAK.csproj.CopyComplete
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\RestaurantAK.exe
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\RestaurantAK.pdb
-C:\Users\anhkh\source\repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\RestaurantAK.csprojAssemblyReference.cache
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
@@ -232,3 +231,4 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Mic
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.xml
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Debug\RestaurantAK.csprojAssemblyReference.cache

@@ -305,7 +305,7 @@ namespace RestaurantAK.UserController
 
         private void cbTypeItem_SelectedValueChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(cbTypeItem.SelectedValue.ToString());
+            //MessageBox.Show(cbTypeItem.SelectedValue.ToString());
             if (cbTypeItem.SelectedValue.ToString() == "RestaurantAK.DTO.TypeItem")
             {
 

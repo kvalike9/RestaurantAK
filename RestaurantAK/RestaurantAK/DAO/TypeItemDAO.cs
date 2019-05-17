@@ -46,5 +46,10 @@ namespace RestaurantAK.DAO
             }
             return items;
         }
+        public bool AddTypeItem(string NameType)
+        {
+            int re = ConnectionDAO.Ins.ExecuteNonQuery("sp_AddTypeItem @NameType", new object[] { NameType });
+            return re > 0;
+        }
     }
 }

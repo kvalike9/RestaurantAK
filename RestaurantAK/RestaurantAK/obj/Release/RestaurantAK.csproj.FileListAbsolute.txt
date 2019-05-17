@@ -231,3 +231,4 @@ C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\M
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.Designer.Interfaces.xml
 C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\bin\Release\Microsoft.VisualStudio.WCFReference.Interop.xml
+C:\Users\anhkh\Source\Repos\RestaurantAK\RestaurantAK\RestaurantAK\obj\Release\RestaurantAK.csprojAssemblyReference.cache

@@ -528,6 +528,12 @@
                       <Format>#,0;(#,0)</Format>
                     </Style>
                   </TextRun>
+                  <TextRun>
+                    <Value> vnđ</Value>
+                    <Style>
+                      <Format>#,0;(#,0)</Format>
+                    </Style>
+                  </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
